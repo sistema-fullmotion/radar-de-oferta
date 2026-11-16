@@ -86,5 +86,22 @@ h2{font:700 20px var(--titulo);letter-spacing:.06em;text-transform:uppercase;mar
 
   <p class="nota">Os links das ofertas são de afiliado da Shopee: se você comprar por eles, recebemos uma comissão e você não paga nada a mais. Preço e estoque podem mudar a qualquer momento; confira na Shopee antes de fechar.</p>
 </main>
+<script>
+/* Pixel do Meta. Vazio = desligado. Quando existir, cada toque num grupo vira "Lead" com o nome do grupo,
+   para o anuncio aprender a achar quem ENTRA, nao so quem clica. */
+var PIXEL_ID = "";
+if (PIXEL_ID) {
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', PIXEL_ID); fbq('track', 'PageView');
+}
+document.querySelectorAll('a[href*="chat.whatsapp.com"]').forEach(function (a) {
+  a.addEventListener('click', function () {
+    var nome = (a.querySelector('b') || a).textContent.trim();
+    if (window.fbq) fbq('track', 'Lead', {content_name: nome});
+  });
+});
+</script>
 </body>
 </html>
