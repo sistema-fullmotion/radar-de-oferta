@@ -38,4 +38,18 @@ h2{font:600 15px/1.3 Inter;margin:0} .t p{margin:0;color:var(--suave);font-size:
 <div class="bs"><a class="c" href="../">Receber as ofertas no WhatsApp</a><a class="c b" href="../#ofertas">Buscar nas ofertas da semana</a></div>
 <p class="v">As ofertas de hoje saem a partir das 11h. Volte mais tarde.</p>
 <p class="n">Links de afiliado da Shopee: se você comprar por eles, recebemos uma comissão e você não paga nada a mais. Preço e estoque mudam rápido; confira na Shopee antes de fechar.</p>
-</main></body></html>
+</main><script>
+var GA_ID = "G-7NHH7V2JQR", PIXEL_ID = "";
+if (GA_ID) { var s = document.createElement("script"); s.async = true; s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID; document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || []; window.gtag = function () { dataLayer.push(arguments); }; gtag("js", new Date()); gtag("config", GA_ID); }
+if (PIXEL_ID) { !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', PIXEL_ID); fbq('track', 'PageView'); }
+document.addEventListener("click", function (ev) {
+  var a = ev.target.closest && ev.target.closest("a"); if (!a) return;
+  var art = a.closest("article"), nome = art ? art.querySelector("h2").textContent : "";
+  if (art) { if (window.gtag) gtag("event", "select_item", {item_list_name: "hoje", items: [{item_name: nome}]});
+             if (window.fbq) fbq("track", "ViewContent", {content_name: nome}); }
+});
+</script></body></html>
