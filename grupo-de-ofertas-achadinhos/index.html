@@ -136,6 +136,11 @@ h2{font:900 clamp(28px,5.6vw,46px)/1.06 var(--tit);letter-spacing:-.015em;margin
 .card .corpo{display:flex;flex-direction:column;gap:6px;padding:12px;flex:1}
 .card h3{font:600 14px/1.3 var(--corpo);margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em}
 .card .preco{font:900 20px var(--tit);letter-spacing:-.01em}
+.card .preco .de{display:block;font:600 12.5px var(--corpo);color:var(--suave);text-decoration:line-through;letter-spacing:0}
+.card .medida{font:600 12px var(--corpo);color:var(--verde)}
+.card .q.rec{top:auto;bottom:8px;background:var(--ambar);color:#1a1300;white-space:nowrap}
+.legenda{display:flex;flex-wrap:wrap;gap:8px 18px;margin:0 0 14px;font-size:13px;color:var(--suave)}
+.legenda b{color:var(--texto,#fff)}
 .card .loja{font-size:11.5px;color:var(--suave)}
 .card .ir{margin-top:auto;display:flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;font:700 14px var(--corpo);background:var(--ambar);color:#1a1300;border-radius:12px;padding:10px}
 .card .ir::after{content:"→";transition:transform .2s}.card:hover .ir::after{transform:translateX(3px)}
@@ -275,8 +280,9 @@ footer p{margin:0;max-width:75ch}
 <h2 class="revela">As últimas ofertas do Radar</h2>
 <p class="sub revela">É o grupo central: toda oferta aprovada pelo Radar, de qualquer assunto, passa por aqui. Se você não quer escolher assunto, entre só neste. <span id="atualizado"></span></p>
 <div class="barra"><form class="busca" role="search" data-busca><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg><label class="sr" for="busca-vitrine">Buscar oferta</label><input id="busca-vitrine" type="search" placeholder="Filtrar: air fryer, fone, perfume…" autocomplete="off" enterkeyhint="search"><button type="submit">Buscar</button></form><div class="chips" id="chips" aria-label="Assuntos"></div>
-<div class="ajustes"><label>Ordenar <select id="ordem"><option value="recentes">Mais recentes</option><option value="vendidos">Mais vendidos</option><option value="queda">Maior queda</option><option value="barato">Menor preço</option></select></label>
+<div class="ajustes"><label>Ordenar <select id="ordem"><option value="recentes">Mais recentes</option><option value="vendidos">Mais vendidos</option><option value="queda">Maior queda</option><option value="recorde">Menor preço já medido</option><option value="barato">Menor preço</option></select></label>
 <label>Preço <select id="faixa"><option value="0">Qualquer</option><option value="3000">Até R$ 30</option><option value="5000">Até R$ 50</option><option value="10000">Até R$ 100</option><option value="20000">Até R$ 200</option></select></label></div></div>
+<p class="legenda revela"><span><b>Riscado</b> é o nosso preço de sempre: o valor do meio nos últimos 30 dias que o Radar mediu, nunca o "de" da loja.</span><span><b>🏆</b> é o menor preço desde que começamos a acompanhar o produto.</span></p>
 <p class="info" id="info" aria-live="polite">Carregando ofertas…<span>Toque na oferta para abrir na loja</span></p>
 <div class="grade" id="grade"><div class="esqueleto"></div><div class="esqueleto"></div><div class="esqueleto"></div><div class="esqueleto"></div><div class="esqueleto"></div><div class="esqueleto"></div><div class="esqueleto"></div><div class="esqueleto"></div></div>
 <div class="vazio" id="vazio" hidden><b>Nada para <span id="vazio-termo">essa busca</span> por enquanto</b>
@@ -389,6 +395,7 @@ if (PIXEL_ID) {
     });
     if (ordem === "vendidos") l.sort(function (a, b) { return (b.v || 0) - (a.v || 0); });
     else if (ordem === "queda") l.sort(function (a, b) { return (b.q || 0) - (a.q || 0); });
+    else if (ordem === "recorde") l.sort(function (a, b) { return (b.rec ? 1 : 0) - (a.rec ? 1 : 0) || (b.q || 0) - (a.q || 0); });
     else if (ordem === "barato") l.sort(function (a, b) { return a.p - b.p; });
     return l;
   }
@@ -398,11 +405,18 @@ if (PIXEL_ID) {
     var c = el("article", "card entra"); c.style.animationDelay = Math.min(i % 24, 12) * 35 + "ms";
     var f = el("div", "foto"); var im = el("img"); im.src = o.i; im.alt = ""; im.loading = "lazy"; im.decoding = "async"; f.appendChild(im);
     f.appendChild(el("span", "tag", nomeAssunto(o.a)));
-    if (o.q) f.appendChild(el("span", "q", "caiu " + o.q + "%"));
+    if (o.rec === "menor") f.appendChild(el("span", "q rec", "🏆 menor preço"));
+    else if (o.rec === "voltou") f.appendChild(el("span", "q rec", "🔁 voltou ao menor"));
+    else if (o.q) f.appendChild(el("span", "q", "caiu " + o.q + "%"));
     c.appendChild(f);
     var b = el("div", "corpo");
     b.appendChild(el("h3", "", o.t));
-    b.appendChild(el("div", "preco", reais(o.p)));
+    var pr = el("div", "preco");
+    if (o.m) pr.appendChild(el("span", "de", reais(o.m)));
+    pr.appendChild(document.createTextNode(reais(o.p)));
+    b.appendChild(pr);
+    if (o.rec) b.appendChild(el("div", "medida", "📌 Menor em " + o.h + " dias medidos"));
+    else if (o.q) b.appendChild(el("div", "medida", "📉 " + o.q + "% abaixo do normal"));
     b.appendChild(el("div", "loja", (o.s === "mercadolivre" ? "Mercado Livre" : "Shopee") + (o.v ? " · " + milhar(o.v) + " vendidos" : "") + " · preço de " + dia(o.vis)));
     var a = el("a", "ir", o.s === "mercadolivre" ? "Ver no Mercado Livre" : "Ver na Shopee");
     a.href = o.l; a.target = "_blank"; a.rel = "noopener nofollow sponsored"; a.setAttribute("data-t", o.t.slice(0, 60));
