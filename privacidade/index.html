@@ -118,6 +118,9 @@ h2{font:900 clamp(28px,5.6vw,46px)/1.06 var(--tit);letter-spacing:-.015em;margin
 .chip{flex:none;scroll-snap-align:start;display:flex;align-items:center;gap:7px;font:600 14px var(--corpo);color:#dbe6ff;background:var(--painel);border:1px solid var(--linha);border-radius:999px;padding:8px 14px;cursor:pointer;transition:background .2s,color .2s,transform .2s}
 .chip small{font-size:12px;color:var(--suave);font-weight:600}
 .chip[aria-pressed=true]{background:#fff;color:#0b1430;border-color:#fff}.chip[aria-pressed=true] small{color:#56627f}
+.ajustes{display:flex;gap:8px;flex-wrap:wrap;padding-top:10px}
+.ajustes label{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--suave)}
+.ajustes select{font:600 13.5px var(--corpo);color:#fff;background:var(--painel2);border:1px solid var(--linha);border-radius:999px;padding:7px 12px;color-scheme:dark}
 .info{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:var(--suave);font-size:14px;margin:0 0 14px}
 .grade{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .card{position:relative;display:flex;flex-direction:column;background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.03));border:1px solid var(--linha);border-radius:var(--r);overflow:hidden;min-width:0;transition:transform .25s,border-color .25s,box-shadow .25s}
@@ -243,7 +246,7 @@ footer p{margin:0;max-width:75ch}
 </style>
 </head>
 
-<body data-raiz="../" data-assunto=""><div class="fundo" aria-hidden="true"></div><header class="topo"><div class="cx"><a class="logo" href="../" aria-label="Radar de Oferta, início"><svg class="simbolo" viewBox="0 0 200 200" aria-hidden="true">
+<body data-raiz="../" data-assunto="" data-assunto-nome=""><div class="fundo" aria-hidden="true"></div><header class="topo"><div class="cx"><a class="logo" href="../" aria-label="Radar de Oferta, início"><svg class="simbolo" viewBox="0 0 200 200" aria-hidden="true">
 <defs><linearGradient id="gR" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2bffb1"/><stop offset="1" stop-color="#27e0ff"/></linearGradient>
 <mask id="mR"><rect width="200" height="200" fill="#fff"/><text x="62" y="127" text-anchor="middle" font-family="Unbounded" font-weight="900" font-size="84" fill="#000">R</text></mask></defs>
 <g transform="translate(100 100) scale(.88) translate(-116 -100)">
@@ -288,7 +291,8 @@ if (PIXEL_ID) {
   var $ = function (s, el) { return (el || document).querySelector(s); };
   var $$ = function (s, el) { return Array.prototype.slice.call((el || document).querySelectorAll(s)); };
   var lento = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var dados = null, filtro = fixo || "todos", termo = "", limite = 24;
+  var dados = null, filtro = fixo || "todos", termo = "", limite = 24, ordem = "recentes", faixa = 0;
+  var nomeFixo = document.body.getAttribute("data-assunto-nome") || "Este assunto";
   var grade = $("#grade"), chips = $("#chips"), maisB = $("#mais"), vazio = $("#vazio"), info = $("#info");
 
   document.addEventListener("click", function (ev) {
@@ -322,13 +326,19 @@ if (PIXEL_ID) {
 
   function lista() {
     var palavras = sem(termo).split(/\s+/).filter(Boolean);
-    return dados.ofertas.filter(function (o) {
-      if (filtro !== "todos" && o.a !== filtro) return false;
+    var l = dados.ofertas.filter(function (o) {
+      if (filtro !== "todos" && filtro.split(",").indexOf(o.a) < 0) return false;
+      if (faixa && o.p > faixa) return false;
       if (!palavras.length) return true;
       var alvo = o._b || (o._b = sem(o.t + " " + o.d + " " + nomeAssunto(o.a)));
       return palavras.every(function (p) { return alvo.indexOf(p) > -1; });
     });
+    if (ordem === "vendidos") l.sort(function (a, b) { return (b.v || 0) - (a.v || 0); });
+    else if (ordem === "queda") l.sort(function (a, b) { return (b.q || 0) - (a.q || 0); });
+    else if (ordem === "barato") l.sort(function (a, b) { return a.p - b.p; });
+    return l;
   }
+  function milhar(n) { return n >= 1000 ? (n / 1000).toLocaleString("pt-BR", {maximumFractionDigits: n < 10000 ? 1 : 0}) + " mil" : String(n); }
 
   function cartao(o, i) {
     var c = el("article", "card entra"); c.style.animationDelay = Math.min(i % 24, 12) * 35 + "ms";
@@ -339,7 +349,7 @@ if (PIXEL_ID) {
     var b = el("div", "corpo");
     b.appendChild(el("h3", "", o.t));
     b.appendChild(el("div", "preco", reais(o.p)));
-    b.appendChild(el("div", "loja", (o.s === "mercadolivre" ? "Mercado Livre" : "Shopee") + " · preço visto em " + dia(o.vis)));
+    b.appendChild(el("div", "loja", (o.s === "mercadolivre" ? "Mercado Livre" : "Shopee") + (o.v ? " · " + milhar(o.v) + " vendidos" : "") + " · preço de " + dia(o.vis)));
     var a = el("a", "ir", o.s === "mercadolivre" ? "Ver no Mercado Livre" : "Ver na Shopee");
     a.href = o.l; a.target = "_blank"; a.rel = "noopener nofollow sponsored"; a.setAttribute("data-t", o.t.slice(0, 60));
     a.setAttribute("data-a", o.a); a.setAttribute("data-p", o.p); a.setAttribute("data-s", o.s);
@@ -355,12 +365,14 @@ if (PIXEL_ID) {
     vazio.hidden = l.length > 0;
     var vt = $("#vazio-termo"); if (vt) vt.textContent = termo ? "“" + termo + "”" : "esse assunto";
     maisB.hidden = l.length <= limite;
-    info.firstChild.textContent = l.length + (l.length === 1 ? " oferta" : " ofertas") + (filtro !== "todos" ? " em " + nomeAssunto(filtro) : "") + (termo ? " para “" + termo + "”" : "");
+    info.firstChild.textContent = l.length + (l.length === 1 ? " oferta" : " ofertas") + (filtro !== "todos" ? " em " + (nomeAssunto(filtro) || nomeFixo) : "") + (termo ? " para “" + termo + "”" : "");
   }
 
   function montarChips() {
     if (!chips) return;
-    var todos = [{chave: "todos", nome: "Tudo", icone: "📡", n: dados.ofertas.length}].concat(dados.assuntos.filter(function (a) { return a.n > 0; }));
+    var todos = [{chave: "todos", nome: "Tudo", icone: "📡", n: dados.ofertas.length}];
+    if (fixo.indexOf(",") > -1) todos.push({chave: fixo, nome: nomeFixo, icone: "⭐", n: dados.ofertas.filter(function (o) { return fixo.split(",").indexOf(o.a) > -1; }).length});
+    todos = todos.concat(dados.assuntos.filter(function (a) { return a.n > 0; }));
     todos.forEach(function (a) {
       var b = el("button", "chip"); b.type = "button"; b.setAttribute("aria-pressed", a.chave === filtro);
       b.appendChild(document.createTextNode((a.icone ? a.icone + " " : "") + a.nome + " ")); b.appendChild(el("small", "", a.n));
@@ -390,6 +402,9 @@ if (PIXEL_ID) {
   });
   $$("[data-sugere]").forEach(function (b) { b.addEventListener("click", function () { buscar(b.textContent, true); }); });
   if (maisB) maisB.addEventListener("click", function () { limite += 24; mostrar(); });
+  var selO = $("#ordem"), selF = $("#faixa");
+  if (selO) selO.addEventListener("change", function () { ordem = selO.value; limite = 24; mostrar(); medir("select_content", {content_type: "ordem", content_id: ordem}); });
+  if (selF) selF.addEventListener("change", function () { faixa = parseInt(selF.value, 10); limite = 24; mostrar(); medir("select_content", {content_type: "faixa_preco", content_id: selF.value}); });
 
   function adesivos() {
     var boas = dados.ofertas.filter(function (o) { return o.q; }).concat(dados.ofertas).slice(0, 3);
