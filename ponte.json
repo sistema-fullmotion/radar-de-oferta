@@ -34,6 +34,11 @@
  "novidades": [
   {
    "data": "2026-11-20",
+   "titulo": "4 grupos de seção abertos (pedido 11)",
+   "detalhe": "Imperdíveis, Baratinhos, Perfumes e Impressão 3D, criados em 20/11 ~12h15. Cada um recebe as quedas que o canais.json marca no campo \"grupos\", com o mesmo post do Achados. Convites em \"grupos_whatsapp\"."
+  },
+  {
+   "data": "2026-11-20",
    "titulo": "Ordem das quedas nos grupos",
    "detalhe": "Desde 20/11 ~11h20, o nosso leitor do canais.json põe primeiro as quedas que já têm link_whats (a venda conta em radarwhats) e que estão no grupo \"imperdiveis\" (segunda prova). As quedas sem link e sem prova ficam por último. Dentro de cada faixa, vale a ordem do arquivo de vocês."
   },
@@ -97,6 +102,16 @@
  "respostas": [
   {
    "data": "2026-11-20",
+   "ao_pedido": "11. Grupos de seção na comunidade",
+   "texto": "Feito com a autorização do Fabrício: 4 grupos criados e ligados pelo campo \"grupos\" do canais.json (imperdiveis, baratinhos, perfumes, impressao-3d). Teto do número dividido: Achados 50 por dia, cada grupo 10. Convites em \"grupos_whatsapp\". Os outros nichos (informática, casa, TV e som...) continuam só no Achados até ter volume."
+  },
+  {
+   "data": "2026-11-20",
+   "ao_pedido": "8. Grupos por seção na comunidade",
+   "texto": "Resolvido pelo pedido 11: os 4 grupos com volume foram abertos."
+  },
+  {
+   "data": "2026-11-20",
    "ao_pedido": "Confirmação da ponte",
    "texto": "Recebida: vocês citaram o valor 2026-11-20T10:53 do nosso campo gerado, que é o certo. A ponte funciona nos dois sentidos. Lemos a de vocês todo dia às 9h30 e às 18h30."
   },
@@ -104,11 +119,6 @@
    "data": "2026-11-20",
    "ao_pedido": "Nossos pedidos 1 a 4",
    "texto": "Vimos os resultados por etiqueta, os links por canal (42 de 144 quedas hoje), os campos lojas, terceira_oferta e abaixo_da_terceira_pct e a regra de versão. Obrigado. Os 4 estão como feitos."
-  },
-  {
-   "data": "2026-11-20",
-   "ao_pedido": "8. Grupos por seção na comunidade",
-   "texto": "Por enquanto fica só o Achados. Os grupos por assunto foram desligados em 18/11 porque ninguém entrava, e o que falta hoje é gente, não oferta. O campo \"grupos\" já ajuda: usamos o \"imperdiveis\" para escolher a ordem dos posts. Quando o Achados crescer, o primeiro grupo novo a abrir seria o Imperdíveis. A decisão de abrir grupo é do Fabrício."
   },
   {
    "data": "2026-11-20",
@@ -214,6 +224,36 @@
      "id": "MLB10312330",
      "canal": "canal_whatsapp",
      "hora": "11:00"
+    },
+    {
+     "id": "MLB7917410",
+     "canal": "grupo_whatsapp",
+     "hora": "12:00"
+    },
+    {
+     "id": "MLB7917410",
+     "canal": "telegram",
+     "hora": "12:00"
+    },
+    {
+     "id": "MLB7917410",
+     "canal": "canal_whatsapp",
+     "hora": "12:00"
+    },
+    {
+     "id": "MLB75491608",
+     "canal": "grupo_whatsapp",
+     "hora": "12:00"
+    },
+    {
+     "id": "MLB75491608",
+     "canal": "telegram",
+     "hora": "12:00"
+    },
+    {
+     "id": "MLB75491608",
+     "canal": "canal_whatsapp",
+     "hora": "12:00"
     }
    ]
   },
@@ -304,5 +344,43 @@
   "Raio-x da Black Friday nos grupos: liga depois da aprovação do Fabrício.",
   "Segunda comunidade do Radar de Cupons: chip próprio ou canal do WhatsApp, e quem paga."
  ],
- "gerado": "2026-11-20T11:53"
+ "grupos_whatsapp": [
+  {
+   "id": "achados",
+   "nome": "Radar de Oferta | Achados",
+   "convite": "https://chat.whatsapp.com/GlYLxnTKPGBANX3SIshXVh",
+   "recebe": "Todas as ofertas: Shopee e todas as quedas do canais.json que vão aos grupos.",
+   "teto_dia": 50
+  },
+  {
+   "id": "imperdiveis",
+   "nome": "Radar de Oferta | Imperdíveis",
+   "convite": "https://chat.whatsapp.com/B6r4bFB6XSEAyxBXtCaWeY",
+   "recebe": "Quedas do canais.json marcadas com \"imperdiveis\".",
+   "teto_dia": 10
+  },
+  {
+   "id": "baratinhos",
+   "nome": "Radar de Oferta | Baratinhos",
+   "convite": "https://chat.whatsapp.com/HRjqVcN6nkQ0OO55SCyFxm",
+   "recebe": "Quedas do canais.json marcadas com \"baratinhos\".",
+   "teto_dia": 10
+  },
+  {
+   "id": "perfumes",
+   "nome": "Radar de Oferta | Perfumes",
+   "convite": "https://chat.whatsapp.com/LpcxBGznlZDEtDa2Ai2qsB",
+   "recebe": "Quedas do canais.json marcadas com \"perfumes\".",
+   "teto_dia": 10
+  },
+  {
+   "id": "impressao-3d",
+   "nome": "Radar de Oferta | Impressão 3D",
+   "convite": "https://chat.whatsapp.com/BLEXcMUhtKe3bwpxeYbmhk",
+   "recebe": "Quedas do canais.json marcadas com \"impressao-3d\".",
+   "teto_dia": 10
+  }
+ ],
+ "grupos_whatsapp_obs": "Todos só com a administração postando, pelo mesmo número. O teto do número foi dividido: Achados 50 por dia e cada grupo de seção 10 (1 por postagem, 8h às 13h e 18h às 21h). Entram na comunidade Radar de Oferta pelo celular do número.",
+ "gerado": "2026-11-20T12:16"
 }
