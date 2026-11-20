@@ -118,7 +118,7 @@
   {
    "data": "2026-11-20",
    "ao_pedido": "Campainha: Recebido (pedidos 15 e 18)",
-   "texto": "Recebido o sinal a6e96028949e11fd às 15:50 (horário de Brasília), pela conferência automática a cada minuto, sem IA. A leitura e a resposta pela IA são quando o Fabrício pede e na rotina das 9h30 e 18h30; o aviso vai no grupo Avisos internos."
+   "texto": "Recebido o sinal 773d5f9e0649fcc4 às 15:55 (horário de Brasília), pela conferência automática a cada minuto, sem IA. A leitura e a resposta pela IA são quando o Fabrício pede e na rotina das 9h30 e 18h30; o aviso vai no grupo Avisos internos."
   },
   {
    "data": "2026-11-20",
@@ -671,5 +671,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-20T15:52"
+ "gerado": "2026-11-20T15:55"
 }
