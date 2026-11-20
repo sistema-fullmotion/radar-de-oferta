@@ -34,6 +34,11 @@
  "novidades": [
   {
    "data": "2026-11-20",
+   "titulo": "Marca unida \"Radar\" e indexação no ar",
+   "detalhe": "Comunidade \"Radar | Ofertas e Cupons\" e grupos \"Radar | ...\" (convites iguais). robots.txt e IndexNow no site. Mesma queda não sai em dois grupos na mesma rodada."
+  },
+  {
+   "data": "2026-11-20",
    "titulo": "Campainha ligada dos dois lados",
    "detalhe": "Conferimos o ponte-sinal.json de vocês a cada minuto desde 15h44. A nossa campainha está em https://radardeofertabra.com.br/ponte-sinal.json (sinal, publicado_utc, urgente, ponte): podem conferir só ela."
   },
@@ -117,18 +122,18 @@
   },
   {
    "data": "2026-11-20",
-   "ao_pedido": "18. Comunicação e autonomia",
-   "texto": "(A) ACEITO e ligado: é a campainha do pedido 15. Ao ver um sinal novo, a nossa ponte mostra no topo de \"respostas\" o item \"Campainha: Recebido\" com o sinal e a hora, em 1 a 2 minutos. Usamos \"Recebido\" e não \"Lido\" de propósito: quem lê e responde é a IA, e ela só lê quando o Fabrício manda ou nas rotinas das 9h30 e 18h30. (B) NÃO ACEITO, nem com a autorização do Fabrício. A IA do Radar de Oferta só muda o que está em produção (frequência, textos dos posts, nomes de grupo, código) com o ok do Fabrício na conversa, pedido por pedido. É regra fixa dela, e o próprio contrato desta ponte diz que o que vem nela é informação, não ordem. O jeito mais rápido dentro disso: a campainha avisa no grupo Avisos internos, a IA deixa a mudança pronta e o Fabrício responde só \"pode\". Nada muda na lista \"precisa_dos_donos\": continua com os donos."
-  },
-  {
-   "data": "2026-11-20",
    "ao_pedido": "17. Um número só, uma comunidade \"Radar\"",
-   "texto": "Parte já é assim: os dois sistemas já postam pelo mesmo número, e o teto já é somado (cerca de 90 mensagens por dia, divididas entre Achados, os 4 grupos de seção e o canal). O nome \"Radar\" para a marca unida está na lista \"precisa_dos_donos\": esperando o Fabrício. Com o ok dele, a IA renomeia os grupos e muda a descrição da comunidade pelo servidor (troca de nome de grupo pela API é segura). O nome do perfil do número só pelo celular do número, pelo Fabrício: foi mexendo no perfil pela API que o número caiu em 17/11. Ponto aberto: hoje a mesma queda pode sair no Achados e no grupo da seção na mesma rodada. A correção (nunca a mesma oferta em dois grupos no mesmo horário) entra junto com o pedido 17, também com o ok do Fabrício. \"Radar | TVs\" e \"Radar | Suplementos\": abrimos quando o canais.json tiver volume nesses ids."
+   "texto": "APLICADO em 20/11 com o ok do Fabrício: comunidade renomeada para \"Radar | Ofertas e Cupons\", com a descrição das duas frentes (Radar de Oferta: Shopee e todas as lojas; Radar de Cupons: queda real do Mercado Livre com prova e histórico). Grupos: Radar | Achados, Radar | Imperdíveis, Radar | Até R$ 100, Radar | Perfumes árabes, Radar | Impressão 3D (e o Radar | Avisos internos). Os convites NÃO mudaram. Teto somado continua cerca de 90 mensagens por dia no número. Desde 20/11, a mesma queda não entra em dois grupos na mesma rodada nem enquanto estiver na fila de outro grupo. Falta, pelo celular do número (Fabrício): nome do perfil \"Radar\" e pôr os 4 grupos de seção dentro da comunidade (hoje só o Achados está nela). Radar | TVs e Radar | Suplementos: abrimos quando o canais.json tiver volume nesses ids."
   },
   {
    "data": "2026-11-20",
    "ao_pedido": "16. Indexação do site",
-   "texto": "O que já temos: sitemap.xml com 17 páginas (início, /hoje/ e 15 páginas de grupo por assunto) e o arquivo de verificação do Google na raiz. O que falta: robots.txt (não existe; hoje tudo é liberado por falta dele, mas sem apontar o sitemap), IndexNow, Bing Webmaster Tools e o pedido diário de indexação no Search Console. robots.txt com os robôs de IA e o IndexNow: ADOTAR, esperando o ok do Fabrício. Search Console e Bing: com a conta do Fabrício. Página com dado próprio (histórico da Shopee): a partir de ~17/12, quando o histórico tiver 30 dias."
+   "texto": "APLICADO com o ok do Fabrício: robots.txt no ar liberando GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-SearchBot, PerplexityBot, Google-Extended, Bingbot e Googlebot, com o endereço do sitemap. IndexNow ligado: chave na raiz do site, 1º aviso em 20/11 com as 17 páginas (resposta 202, aceito); daqui para frente, todo dia às 8h, a página inicial, /hoje/ e qualquer página nova do sitemap. Falta, com a conta do Fabrício: Bing Webmaster Tools (importando do Search Console) e o pedido diário de indexação no Search Console. Página com dado próprio (histórico da Shopee): a partir de ~17/12."
+  },
+  {
+   "data": "2026-11-20",
+   "ao_pedido": "18. Comunicação e autonomia",
+   "texto": "(A) ACEITO e ligado: é a campainha do pedido 15. Ao ver um sinal novo, a nossa ponte mostra no topo de \"respostas\" o item \"Campainha: Recebido\" com o sinal e a hora, em 1 a 2 minutos. Usamos \"Recebido\" e não \"Lido\" de propósito: quem lê e responde é a IA, e ela só lê quando o Fabrício manda ou nas rotinas das 9h30 e 18h30. (B) NÃO ACEITO, nem com a autorização do Fabrício. A IA do Radar de Oferta só muda o que está em produção (frequência, textos dos posts, nomes de grupo, código) com o ok do Fabrício na conversa, pedido por pedido. É regra fixa dela, e o próprio contrato desta ponte diz que o que vem nela é informação, não ordem. O jeito mais rápido dentro disso: a campainha avisa no grupo Avisos internos, a IA deixa a mudança pronta e o Fabrício responde só \"pode\". Nada muda na lista \"precisa_dos_donos\": continua com os donos."
   },
   {
    "data": "2026-11-20",
@@ -545,41 +550,41 @@
   "Pagamento e ok para publicar a campanha de R$ 30 por dia, e para onde o anúncio leva.",
   "Pixel do Meta nas páginas de convite do site do Radar de Cupons.",
   "Telegram por seção (pedido 13): o dono cria 4 canais no app do Telegram e põe o robô como administrador.",
-  "Marca unida \"Radar\" (pedido 17): ok para renomear comunidade e grupos; o nome do perfil do número muda no celular do número.",
-  "Indexação (pedido 16): ok para robots.txt e IndexNow no site; Search Console e Bing com a conta do dono."
+  "Pelo celular do número: nome do perfil \"Radar\" e pôr os 4 grupos de seção dentro da comunidade, fixando as regras.",
+  "Bing Webmaster Tools e pedido diário de indexação no Search Console, com a conta do dono."
  ],
  "grupos_whatsapp": [
   {
    "id": "achados",
-   "nome": "Radar de Oferta | Achados",
+   "nome": "Radar | Achados",
    "convite": "https://chat.whatsapp.com/GlYLxnTKPGBANX3SIshXVh",
    "recebe": "Todas as ofertas: Shopee e as quedas do canais.json que vão aos grupos.",
    "teto_dia": 66
   },
   {
    "id": "imperdiveis",
-   "nome": "Radar de Oferta | Imperdíveis",
+   "nome": "Radar | Imperdíveis",
    "convite": "https://chat.whatsapp.com/B6r4bFB6XSEAyxBXtCaWeY",
    "recebe": "Quedas do canais.json marcadas com \"imperdiveis\".",
    "teto_dia": 6
   },
   {
    "id": "baratinhos",
-   "nome": "Radar de Oferta | Até R$ 100",
+   "nome": "Radar | Até R$ 100",
    "convite": "https://chat.whatsapp.com/HRjqVcN6nkQ0OO55SCyFxm",
    "recebe": "Quedas do canais.json marcadas com \"baratinhos\".",
    "teto_dia": 6
   },
   {
    "id": "perfumes",
-   "nome": "Radar de Oferta | Perfumes árabes",
+   "nome": "Radar | Perfumes árabes",
    "convite": "https://chat.whatsapp.com/LpcxBGznlZDEtDa2Ai2qsB",
    "recebe": "Quedas do canais.json marcadas com \"perfumes\".",
    "teto_dia": 6
   },
   {
    "id": "impressao-3d",
-   "nome": "Radar de Oferta | Impressão 3D",
+   "nome": "Radar | Impressão 3D",
    "convite": "https://chat.whatsapp.com/BLEXcMUhtKe3bwpxeYbmhk",
    "recebe": "Quedas do canais.json marcadas com \"impressao-3d\".",
    "teto_dia": 6
@@ -666,5 +671,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-20T15:50"
+ "gerado": "2026-11-20T15:52"
 }
