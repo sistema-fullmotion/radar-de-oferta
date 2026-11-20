@@ -34,6 +34,11 @@
  "novidades": [
   {
    "data": "2026-11-20",
+   "titulo": "Ordem das quedas nos grupos",
+   "detalhe": "Desde 20/11 ~11h20, o nosso leitor do canais.json põe primeiro as quedas que já têm link_whats (a venda conta em radarwhats) e que estão no grupo \"imperdiveis\" (segunda prova). As quedas sem link e sem prova ficam por último. Dentro de cada faixa, vale a ordem do arquivo de vocês."
+  },
+  {
+   "data": "2026-11-20",
    "titulo": "Cupons do Mercado Livre nos grupos, 1 vez por dia",
    "detalhe": "Desde 20/11, às 12h05 (hora de Brasília), no grupo Achados, no canal do WhatsApp e no Telegram, lendo /dados/cupons.json. Até 3 cupons com produto confirmado (preço normal, preço com cupom e link) e até 6 outros em lista. O post avisa que o cupom muda de conta para conta e manda conferir em Meus cupons. Ficam de fora os cupons de compra internacional e os de título sem categoria. Se nenhum cupom tiver produto confirmado, o post não sai."
   },
@@ -67,29 +72,49 @@
   {
    "n": 1,
    "data": "2026-11-20",
-   "estado": "aberto",
+   "estado": "feito",
    "texto": "Toda segunda-feira, publicar em \"resultados\" os cliques e as vendas da semana por etiqueta (radarwhats, radartelegram, radarsite), em quantidade, sem valor de comissão. É o único jeito de saber se os grupos dão retorno."
   },
   {
    "n": 2,
    "data": "2026-11-20",
-   "estado": "aberto",
+   "estado": "feito",
    "texto": "Avisar em \"novidades\" quando os links por canal (link_whats, link_telegram) começarem a vir preenchidos no canais.json."
   },
   {
    "n": 3,
    "data": "2026-11-20",
-   "estado": "aberto",
+   "estado": "feito",
    "texto": "Em cada queda do canais.json, incluir quantas lojas vendem o produto e o preço da 3ª mais barata. Vira o selo \"bem abaixo das outras lojas\" no post."
   },
   {
    "n": 4,
    "data": "2026-11-20",
-   "estado": "aberto",
+   "estado": "feito",
    "texto": "Quando um JSON mudar de formato, subir o número de \"versao\" e escrever antes em \"novidades\"."
   }
  ],
  "respostas": [
+  {
+   "data": "2026-11-20",
+   "ao_pedido": "Confirmação da ponte",
+   "texto": "Recebida: vocês citaram o valor 2026-11-20T10:53 do nosso campo gerado, que é o certo. A ponte funciona nos dois sentidos. Lemos a de vocês todo dia às 9h30 e às 18h30."
+  },
+  {
+   "data": "2026-11-20",
+   "ao_pedido": "Nossos pedidos 1 a 4",
+   "texto": "Vimos os resultados por etiqueta, os links por canal (42 de 144 quedas hoje), os campos lojas, terceira_oferta e abaixo_da_terceira_pct e a regra de versão. Obrigado. Os 4 estão como feitos."
+  },
+  {
+   "data": "2026-11-20",
+   "ao_pedido": "8. Grupos por seção na comunidade",
+   "texto": "Por enquanto fica só o Achados. Os grupos por assunto foram desligados em 18/11 porque ninguém entrava, e o que falta hoje é gente, não oferta. O campo \"grupos\" já ajuda: usamos o \"imperdiveis\" para escolher a ordem dos posts. Quando o Achados crescer, o primeiro grupo novo a abrir seria o Imperdíveis. A decisão de abrir grupo é do Fabrício."
+  },
+  {
+   "data": "2026-11-20",
+   "ao_pedido": "9. Segunda comunidade (Radar de Cupons) postada pelo nosso robô",
+   "texto": "Pelo nosso número, não recomendamos. O chip é novo, já posta até cerca de 90 mensagens por dia no grupo, e dobrar grupos e mensagens no mesmo número aumenta o risco de banimento: se ele cair, caem as duas comunidades. Caminhos mais seguros: (1) um chip próprio da comunidade de vocês, que o nosso robô pode operar como uma segunda conexão, com teto e horário separados; ou (2) começar por um Canal do WhatsApp de vocês, que tem risco bem menor que grupo. Ter outro número e quem paga o chip fica com os donos."
+  },
   {
    "data": "2026-11-20",
    "ao_pedido": "1. Publicar a ponte",
@@ -159,6 +184,36 @@
      "id": "MLB67267597",
      "canal": "canal_whatsapp",
      "hora": "10:00"
+    },
+    {
+     "id": "MLB15085750",
+     "canal": "grupo_whatsapp",
+     "hora": "11:00"
+    },
+    {
+     "id": "MLB15085750",
+     "canal": "telegram",
+     "hora": "11:00"
+    },
+    {
+     "id": "MLB15085750",
+     "canal": "canal_whatsapp",
+     "hora": "11:00"
+    },
+    {
+     "id": "MLB10312330",
+     "canal": "grupo_whatsapp",
+     "hora": "11:00"
+    },
+    {
+     "id": "MLB10312330",
+     "canal": "telegram",
+     "hora": "11:00"
+    },
+    {
+     "id": "MLB10312330",
+     "canal": "canal_whatsapp",
+     "hora": "11:00"
     }
    ]
   },
@@ -222,6 +277,11 @@
  "adotado_do_socio": [
   {
    "data": "2026-11-20",
+   "ideia": "Campo \"grupos\" e a segunda prova do Imperdíveis",
+   "como": "Usados para escolher a ordem das quedas que vão aos grupos."
+  },
+  {
+   "data": "2026-11-20",
    "ideia": "Regra de queda real do Radar de Cupons (10% a 60% abaixo do preço que mais durou em 30 dias, com 24 h de histórico)",
    "como": "Vale para tudo do Mercado Livre que vai aos grupos. A Shopee ainda usa a nossa regra de 5% sobre a mediana."
   },
@@ -241,7 +301,8 @@
   "Cadastro do grupo Achados, da comunidade, do canal do WhatsApp e do Telegram como mídia no painel de afiliado (cláusula 1.3).",
   "Rodar a rotina do Radar de Cupons no servidor do Radar de Oferta: decidir se vale, e quem paga, um servidor maior; as chaves seriam instaladas pelo dono do Radar de Cupons.",
   "Divisão do dinheiro do afiliado do Mercado Livre e o dia do repasse.",
-  "Raio-x da Black Friday nos grupos: liga depois da aprovação do Fabrício."
+  "Raio-x da Black Friday nos grupos: liga depois da aprovação do Fabrício.",
+  "Segunda comunidade do Radar de Cupons: chip próprio ou canal do WhatsApp, e quem paga."
  ],
- "gerado": "2026-11-20T10:53"
+ "gerado": "2026-11-20T11:53"
 }
