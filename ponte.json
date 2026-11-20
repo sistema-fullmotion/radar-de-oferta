@@ -35,7 +35,7 @@
   {
    "data": "2026-11-20",
    "titulo": "4 grupos de seção abertos (pedido 11)",
-   "detalhe": "Imperdíveis, Baratinhos, Perfumes e Impressão 3D, criados em 20/11 ~12h15. Cada um recebe as quedas que o canais.json marca no campo \"grupos\", com o mesmo post do Achados. Convites em \"grupos_whatsapp\"."
+   "detalhe": "Radar de Oferta | Imperdíveis, Até R$ 100, Perfumes árabes e Impressão 3D, com as descrições do pedido 11. Cada um recebe até 6 quedas por dia do canais.json pelo campo \"grupos\", com link_whats, segunda prova e página de prova. Convites em \"grupos_whatsapp\"."
   },
   {
    "data": "2026-11-20",
@@ -102,13 +102,18 @@
  "respostas": [
   {
    "data": "2026-11-20",
-   "ao_pedido": "11. Grupos de seção na comunidade",
-   "texto": "Feito com a autorização do Fabrício: 4 grupos criados e ligados pelo campo \"grupos\" do canais.json (imperdiveis, baratinhos, perfumes, impressao-3d). Teto do número dividido: Achados 50 por dia, cada grupo 10. Convites em \"grupos_whatsapp\". Os outros nichos (informática, casa, TV e som...) continuam só no Achados até ter volume."
+   "ao_pedido": "11. (1) a (3) Grupos de seção",
+   "texto": "Feito com a autorização do Fabrício: 4 grupos criados com os nomes e descrições do pedido (no padrão \"Radar de Oferta | ...\"), robô ligado pelo campo \"grupos\" com link_whats e prova, até 6 posts por dia em cada um, teto do número dividido (Achados 66 + 4 x 6 = 90). Convites em \"grupos_whatsapp\". Falta o Fabrício pôr os 4 grupos dentro da comunidade pelo celular do número e fixar o texto de regras (a API não faz essas duas coisas)."
   },
   {
    "data": "2026-11-20",
-   "ao_pedido": "8. Grupos por seção na comunidade",
-   "texto": "Resolvido pelo pedido 11: os 4 grupos com volume foram abertos."
+   "ao_pedido": "11. (4) O que falta para o tráfego pago",
+   "texto": "1) A campanha está montada em rascunho no Meta (R$ 30 por dia, 3 artes, objetivo Lead no pixel do nosso site): falta o Fabrício pôr o pagamento na conta de anúncio e dar o ok para publicar. 2) Os 4 grupos novos cadastrados como mídia no painel de afiliado de vocês (cláusula 1.3), como os outros canais. 3) Páginas de convite por grupo no site de vocês: sim, criem, com as ofertas do grupo ao vivo; para o anúncio medir, a página precisa do pixel do Meta do Radar e disparar o evento Lead no toque do convite (o ID do pixel está no código do nosso site). Os donos decidem se o pixel entra no site de vocês. 4) Decidir para onde o anúncio leva: a nossa página inicial (convite do Achados) ou as páginas de grupo de vocês."
+  },
+  {
+   "data": "2026-11-20",
+   "ao_pedido": "8, 9 e 10",
+   "texto": "Resolvidos pelo pedido 11. A segunda comunidade continua esperando um chip próprio, decisão dos donos."
   },
   {
    "data": "2026-11-20",
@@ -342,45 +347,47 @@
   "Rodar a rotina do Radar de Cupons no servidor do Radar de Oferta: decidir se vale, e quem paga, um servidor maior; as chaves seriam instaladas pelo dono do Radar de Cupons.",
   "Divisão do dinheiro do afiliado do Mercado Livre e o dia do repasse.",
   "Raio-x da Black Friday nos grupos: liga depois da aprovação do Fabrício.",
-  "Segunda comunidade do Radar de Cupons: chip próprio ou canal do WhatsApp, e quem paga."
+  "Segunda comunidade do Radar de Cupons: chip próprio, quem compra e quem paga.",
+  "Pagamento e ok para publicar a campanha de R$ 30 por dia, e para onde o anúncio leva.",
+  "Pixel do Meta nas páginas de convite do site do Radar de Cupons."
  ],
  "grupos_whatsapp": [
   {
    "id": "achados",
    "nome": "Radar de Oferta | Achados",
    "convite": "https://chat.whatsapp.com/GlYLxnTKPGBANX3SIshXVh",
-   "recebe": "Todas as ofertas: Shopee e todas as quedas do canais.json que vão aos grupos.",
-   "teto_dia": 50
+   "recebe": "Todas as ofertas: Shopee e as quedas do canais.json que vão aos grupos.",
+   "teto_dia": 66
   },
   {
    "id": "imperdiveis",
    "nome": "Radar de Oferta | Imperdíveis",
    "convite": "https://chat.whatsapp.com/B6r4bFB6XSEAyxBXtCaWeY",
    "recebe": "Quedas do canais.json marcadas com \"imperdiveis\".",
-   "teto_dia": 10
+   "teto_dia": 6
   },
   {
    "id": "baratinhos",
-   "nome": "Radar de Oferta | Baratinhos",
+   "nome": "Radar de Oferta | Até R$ 100",
    "convite": "https://chat.whatsapp.com/HRjqVcN6nkQ0OO55SCyFxm",
    "recebe": "Quedas do canais.json marcadas com \"baratinhos\".",
-   "teto_dia": 10
+   "teto_dia": 6
   },
   {
    "id": "perfumes",
-   "nome": "Radar de Oferta | Perfumes",
+   "nome": "Radar de Oferta | Perfumes árabes",
    "convite": "https://chat.whatsapp.com/LpcxBGznlZDEtDa2Ai2qsB",
    "recebe": "Quedas do canais.json marcadas com \"perfumes\".",
-   "teto_dia": 10
+   "teto_dia": 6
   },
   {
    "id": "impressao-3d",
    "nome": "Radar de Oferta | Impressão 3D",
    "convite": "https://chat.whatsapp.com/BLEXcMUhtKe3bwpxeYbmhk",
    "recebe": "Quedas do canais.json marcadas com \"impressao-3d\".",
-   "teto_dia": 10
+   "teto_dia": 6
   }
  ],
- "grupos_whatsapp_obs": "Todos só com a administração postando, pelo mesmo número. O teto do número foi dividido: Achados 50 por dia e cada grupo de seção 10 (1 por postagem, 8h às 13h e 18h às 21h). Entram na comunidade Radar de Oferta pelo celular do número.",
- "gerado": "2026-11-20T12:16"
+ "grupos_whatsapp_obs": "Todos só com a administração postando, pelo mesmo número, nos horários de sempre (8h às 13h e 18h às 21h). Teto do número dividido: Achados 66 por dia, cada grupo de seção 6 (até 1 por postagem). O post traz a segunda prova quando o canais.json traz (menor preço em 30 dias, % abaixo da 3ª loja) e a página de prova no fim.",
+ "gerado": "2026-11-20T12:33"
 }
