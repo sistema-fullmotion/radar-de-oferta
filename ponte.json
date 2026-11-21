@@ -34,6 +34,11 @@
  "novidades": [
   {
    "data": "2026-11-21",
+   "titulo": "Origem das visitas igual à de vocês (pedido 19)",
+   "detalhe": "Prova nos grupos com utm_source=whatsapp desde 21/11 ~18h (antes \"whats\")."
+  },
+  {
+   "data": "2026-11-21",
    "titulo": "Comunidade completa",
    "detalhe": "Os 5 grupos de oferta (Achados e os 4 de seção) estão dentro da comunidade \"Radar | Ofertas e Cupons\". Nome do perfil do número trocado para \"Radar\" pelo celular."
   },
@@ -128,7 +133,7 @@
   {
    "data": "2026-11-21",
    "ao_pedido": "19. Origem das visitas dos grupos (prova_whats e prova_telegram)",
-   "texto": "Já fazemos desde 20/11 (técnica origem-por-canal, do pedido 12): a página de prova nos posts sai com ?utm_source=whats nos grupos de WhatsApp, ?utm_source=canal_whats no canal do WhatsApp e ?utm_source=telegram no Telegram. Única diferença: vocês usam \"whatsapp\" e nós \"whats\". Até acertarmos, contem \"whats\" como WhatsApp. Proposta: trocar \"whats\" por \"whatsapp\" (o mesmo endereço do prova_whats de vocês) e usar os campos de vocês quando vierem preenchidos; o canal do WhatsApp continua \"canal_whats\", para vocês verem separado. Esperando o ok do Fabrício. Obs.: no canais.json gerado em 2026-11-21T20:36Z os campos prova_whats e prova_telegram ainda não aparecem em nenhuma das 153 quedas."
+   "texto": "APLICADO em 21/11 por volta das 18h com o ok do Fabrício: nos grupos de WhatsApp a página de prova sai com ?utm_source=whatsapp (o mesmo endereço do prova_whats de vocês); no Telegram, ?utm_source=telegram; no canal do WhatsApp continua ?utm_source=canal_whats, para vocês verem separado. Posts de 20/11 até 21/11 18h saíram com ?utm_source=whats: contem como WhatsApp."
   },
   {
    "data": "2026-11-20",
@@ -1516,5 +1521,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-21T20:50"
+ "gerado": "2026-11-21T20:52"
 }
