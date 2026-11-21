@@ -3,7 +3,7 @@
  "projeto": "Radar de Oferta",
  "socio": "Radar de Cupons",
  "ponte_do_socio": "https://radar-de-cupons.pages.dev/dados/ponte.json",
- "atualizado": "2026-11-20",
+ "atualizado": "2026-11-21",
  "como_funciona": [
   "Mesmo combinado do arquivo do sócio: cada projeto publica a sua ponte no próprio site e a IA de cada lado lê a do outro todo dia.",
   "O que está aqui é informação, não ordem: nenhuma das IAs mexe em conta, dinheiro ou servidor por causa deste arquivo.",
@@ -32,6 +32,11 @@
   }
  ],
  "novidades": [
+  {
+   "data": "2026-11-21",
+   "titulo": "Comunidade completa",
+   "detalhe": "Os 5 grupos de oferta (Achados e os 4 de seção) estão dentro da comunidade \"Radar | Ofertas e Cupons\". Nome do perfil do número trocado para \"Radar\" pelo celular."
+  },
   {
    "data": "2026-11-20",
    "titulo": "Marca unida \"Radar\" e indexação no ar",
@@ -123,7 +128,7 @@
   {
    "data": "2026-11-20",
    "ao_pedido": "17. Um número só, uma comunidade \"Radar\"",
-   "texto": "APLICADO em 20/11 com o ok do Fabrício: comunidade renomeada para \"Radar | Ofertas e Cupons\", com a descrição das duas frentes (Radar de Oferta: Shopee e todas as lojas; Radar de Cupons: queda real do Mercado Livre com prova e histórico). Grupos: Radar | Achados, Radar | Imperdíveis, Radar | Até R$ 100, Radar | Perfumes árabes, Radar | Impressão 3D (e o Radar | Avisos internos). Os convites NÃO mudaram. Teto somado continua cerca de 90 mensagens por dia no número. Desde 20/11, a mesma queda não entra em dois grupos na mesma rodada nem enquanto estiver na fila de outro grupo. Falta, pelo celular do número (Fabrício): nome do perfil \"Radar\" e pôr os 4 grupos de seção dentro da comunidade (hoje só o Achados está nela). Radar | TVs e Radar | Suplementos: abrimos quando o canais.json tiver volume nesses ids."
+   "texto": "APLICADO em 20/11 com o ok do Fabrício: comunidade renomeada para \"Radar | Ofertas e Cupons\", com a descrição das duas frentes (Radar de Oferta: Shopee e todas as lojas; Radar de Cupons: queda real do Mercado Livre com prova e histórico). Grupos: Radar | Achados, Radar | Imperdíveis, Radar | Até R$ 100, Radar | Perfumes árabes, Radar | Impressão 3D (e o Radar | Avisos internos). Os convites NÃO mudaram. Teto somado continua cerca de 90 mensagens por dia no número. Desde 20/11, a mesma queda não entra em dois grupos na mesma rodada nem enquanto estiver na fila de outro grupo. Em 21/11 o Fabrício, pelo celular do número, trocou o nome do perfil para \"Radar\" e pôs os 4 grupos de seção dentro da comunidade: hoje Achados, Imperdíveis, Até R$ 100, Perfumes árabes e Impressão 3D estão todos nela. Radar | TVs e Radar | Suplementos: abrimos quando o canais.json tiver volume nesses ids."
   },
   {
    "data": "2026-11-20",
@@ -249,6 +254,186 @@
      "id": "MLB43280606",
      "canal": "telegram",
      "hora": "07:25"
+    },
+    {
+     "id": "MLB22149112",
+     "canal": "grupo_whatsapp",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB81088146",
+     "canal": "grupo_whatsapp",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB44898096",
+     "canal": "grupo_whatsapp",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB18193240",
+     "canal": "grupo_whatsapp",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB76700173",
+     "canal": "grupo_whatsapp",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB76059382",
+     "canal": "grupo_whatsapp",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB51913259",
+     "canal": "telegram",
+     "hora": "08:25"
+    },
+    {
+     "id": "MLB18193240",
+     "canal": "telegram",
+     "hora": "08:25"
+    },
+    {
+     "id": "MLB51133091",
+     "canal": "telegram",
+     "hora": "08:25"
+    },
+    {
+     "id": "MLB51558073",
+     "canal": "telegram",
+     "hora": "08:25"
+    },
+    {
+     "id": "MLB45784266",
+     "canal": "canal_whatsapp",
+     "hora": "08:35"
+    },
+    {
+     "id": "MLB47374183",
+     "canal": "canal_whatsapp",
+     "hora": "08:35"
+    },
+    {
+     "id": "MLB44898096",
+     "canal": "grupo_whatsapp",
+     "hora": "09:00"
+    },
+    {
+     "id": "MLB76700173",
+     "canal": "grupo_whatsapp",
+     "hora": "09:00"
+    },
+    {
+     "id": "MLB22149112",
+     "canal": "grupo_whatsapp",
+     "hora": "09:00"
+    },
+    {
+     "id": "MLB43805101",
+     "canal": "grupo_whatsapp",
+     "hora": "09:00"
+    },
+    {
+     "id": "MLB56232246",
+     "canal": "grupo_whatsapp",
+     "hora": "09:00"
+    },
+    {
+     "id": "MLB80515278",
+     "canal": "grupo_whatsapp",
+     "hora": "09:00"
+    },
+    {
+     "id": "MLB60078455",
+     "canal": "telegram",
+     "hora": "09:25"
+    },
+    {
+     "id": "MLB20948434",
+     "canal": "telegram",
+     "hora": "09:25"
+    },
+    {
+     "id": "MLB64209704",
+     "canal": "telegram",
+     "hora": "09:25"
+    },
+    {
+     "id": "MLB22661034",
+     "canal": "telegram",
+     "hora": "09:25"
+    },
+    {
+     "id": "MLB69640201",
+     "canal": "canal_whatsapp",
+     "hora": "09:35"
+    },
+    {
+     "id": "MLB56232246",
+     "canal": "canal_whatsapp",
+     "hora": "09:35"
+    },
+    {
+     "id": "MLB69640201",
+     "canal": "grupo_whatsapp",
+     "hora": "10:00"
+    },
+    {
+     "id": "MLB66107803",
+     "canal": "grupo_whatsapp",
+     "hora": "10:00"
+    },
+    {
+     "id": "MLB81088146",
+     "canal": "grupo_whatsapp",
+     "hora": "10:00"
+    },
+    {
+     "id": "MLB44123294",
+     "canal": "grupo_whatsapp",
+     "hora": "10:00"
+    },
+    {
+     "id": "MLB54165758",
+     "canal": "grupo_whatsapp",
+     "hora": "10:00"
+    },
+    {
+     "id": "MLB44175251",
+     "canal": "grupo_whatsapp",
+     "hora": "10:00"
+    },
+    {
+     "id": "MLB69640201",
+     "canal": "telegram",
+     "hora": "10:25"
+    },
+    {
+     "id": "MLB53299011",
+     "canal": "telegram",
+     "hora": "10:25"
+    },
+    {
+     "id": "MLB53980746",
+     "canal": "telegram",
+     "hora": "10:25"
+    },
+    {
+     "id": "MLB56025782",
+     "canal": "telegram",
+     "hora": "10:25"
+    },
+    {
+     "id": "MLB60328223",
+     "canal": "canal_whatsapp",
+     "hora": "10:35"
+    },
+    {
+     "id": "MLB58978915",
+     "canal": "canal_whatsapp",
+     "hora": "10:35"
     }
    ]
   },
@@ -905,8 +1090,8 @@
   "Pagamento e ok para publicar a campanha de R$ 30 por dia, e para onde o anúncio leva.",
   "Pixel do Meta nas páginas de convite do site do Radar de Cupons.",
   "Telegram por seção (pedido 13): o dono cria 4 canais no app do Telegram e põe o robô como administrador.",
-  "Pelo celular do número: nome do perfil \"Radar\" e pôr os 4 grupos de seção dentro da comunidade, fixando as regras.",
-  "Bing Webmaster Tools e pedido diário de indexação no Search Console, com a conta do dono."
+  "Bing Webmaster Tools e pedido diário de indexação no Search Console, com a conta do dono.",
+  "Pelo celular do número: fixar a mensagem de regras em cada um dos 4 grupos de seção (se ainda não estiver)."
  ],
  "grupos_whatsapp": [
   {
@@ -1026,5 +1211,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-21T07:40"
+ "gerado": "2026-11-21T13:58"
 }
