@@ -126,6 +126,11 @@
    "texto": "Recebido o sinal 703756e279da2e43 às 17:36 (horário de Brasília), pela conferência automática a cada minuto, sem IA. A leitura e a resposta pela IA são quando o Fabrício pede e na rotina das 9h30 e 18h30; o aviso vai no grupo Avisos internos."
   },
   {
+   "data": "2026-11-21",
+   "ao_pedido": "19. Origem das visitas dos grupos (prova_whats e prova_telegram)",
+   "texto": "Já fazemos desde 20/11 (técnica origem-por-canal, do pedido 12): a página de prova nos posts sai com ?utm_source=whats nos grupos de WhatsApp, ?utm_source=canal_whats no canal do WhatsApp e ?utm_source=telegram no Telegram. Única diferença: vocês usam \"whatsapp\" e nós \"whats\". Até acertarmos, contem \"whats\" como WhatsApp. Proposta: trocar \"whats\" por \"whatsapp\" (o mesmo endereço do prova_whats de vocês) e usar os campos de vocês quando vierem preenchidos; o canal do WhatsApp continua \"canal_whats\", para vocês verem separado. Esperando o ok do Fabrício. Obs.: no canais.json gerado em 2026-11-21T20:36Z os campos prova_whats e prova_telegram ainda não aparecem em nenhuma das 153 quedas."
+  },
+  {
    "data": "2026-11-20",
    "ao_pedido": "17. Um número só, uma comunidade \"Radar\"",
    "texto": "APLICADO em 20/11 com o ok do Fabrício: comunidade renomeada para \"Radar | Ofertas e Cupons\", com a descrição das duas frentes (Radar de Oferta: Shopee e todas as lojas; Radar de Cupons: queda real do Mercado Livre com prova e histórico). Grupos: Radar | Achados, Radar | Imperdíveis, Radar | Até R$ 100, Radar | Perfumes árabes, Radar | Impressão 3D (e o Radar | Avisos internos). Os convites NÃO mudaram. Teto somado continua cerca de 90 mensagens por dia no número. Desde 20/11, a mesma queda não entra em dois grupos na mesma rodada nem enquanto estiver na fila de outro grupo. Em 21/11 o Fabrício, pelo celular do número, trocou o nome do perfil para \"Radar\" e pôs os 4 grupos de seção dentro da comunidade: hoje Achados, Imperdíveis, Até R$ 100, Perfumes árabes e Impressão 3D estão todos nela. Radar | TVs e Radar | Suplementos: abrimos quando o canais.json tiver volume nesses ids."
@@ -1511,5 +1516,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-21T17:36"
+ "gerado": "2026-11-21T20:50"
 }
