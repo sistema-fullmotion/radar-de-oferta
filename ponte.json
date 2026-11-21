@@ -459,6 +459,286 @@
      "id": "MLB61779090",
      "canal": "canal_whatsapp",
      "hora": "15:35"
+    },
+    {
+     "id": "MLB76700173",
+     "canal": "telegram",
+     "hora": "16:25"
+    },
+    {
+     "id": "MLB72657880",
+     "canal": "telegram",
+     "hora": "16:25"
+    },
+    {
+     "id": "MLB52876876",
+     "canal": "telegram",
+     "hora": "16:25"
+    },
+    {
+     "id": "MLB66107803",
+     "canal": "telegram",
+     "hora": "16:25"
+    },
+    {
+     "id": "MLB66818715",
+     "canal": "canal_whatsapp",
+     "hora": "16:35"
+    },
+    {
+     "id": "MLB22149112",
+     "canal": "canal_whatsapp",
+     "hora": "16:35"
+    },
+    {
+     "id": "MLB47847972",
+     "canal": "telegram",
+     "hora": "17:25"
+    },
+    {
+     "id": "MLB76059382",
+     "canal": "telegram",
+     "hora": "17:25"
+    },
+    {
+     "id": "MLB80515278",
+     "canal": "telegram",
+     "hora": "17:25"
+    },
+    {
+     "id": "MLB44175251",
+     "canal": "telegram",
+     "hora": "17:25"
+    },
+    {
+     "id": "MLB81088146",
+     "canal": "canal_whatsapp",
+     "hora": "17:35"
+    },
+    {
+     "id": "MLB44898096",
+     "canal": "canal_whatsapp",
+     "hora": "17:35"
+    },
+    {
+     "id": "MLB26644053",
+     "canal": "grupo_whatsapp",
+     "hora": "18:00"
+    },
+    {
+     "id": "MLB61980728",
+     "canal": "grupo_whatsapp",
+     "hora": "18:00"
+    },
+    {
+     "id": "MLB28191015",
+     "canal": "grupo_whatsapp",
+     "hora": "18:00"
+    },
+    {
+     "id": "MLB80515278",
+     "canal": "grupo_whatsapp",
+     "hora": "18:00"
+    },
+    {
+     "id": "MLB66818715",
+     "canal": "grupo_whatsapp",
+     "hora": "18:00"
+    },
+    {
+     "id": "MLB72657880",
+     "canal": "grupo_whatsapp",
+     "hora": "18:00"
+    },
+    {
+     "id": "MLB67267597",
+     "canal": "telegram",
+     "hora": "18:25"
+    },
+    {
+     "id": "MLB63268250",
+     "canal": "telegram",
+     "hora": "18:25"
+    },
+    {
+     "id": "MLB45784266",
+     "canal": "telegram",
+     "hora": "18:25"
+    },
+    {
+     "id": "MLB74735415",
+     "canal": "telegram",
+     "hora": "18:25"
+    },
+    {
+     "id": "MLB76700173",
+     "canal": "canal_whatsapp",
+     "hora": "18:35"
+    },
+    {
+     "id": "MLB72657880",
+     "canal": "canal_whatsapp",
+     "hora": "18:35"
+    },
+    {
+     "id": "MLB61779090",
+     "canal": "grupo_whatsapp",
+     "hora": "19:00"
+    },
+    {
+     "id": "MLB66818715",
+     "canal": "grupo_whatsapp",
+     "hora": "19:00"
+    },
+    {
+     "id": "MLB26644053",
+     "canal": "grupo_whatsapp",
+     "hora": "19:00"
+    },
+    {
+     "id": "MLB44175251",
+     "canal": "grupo_whatsapp",
+     "hora": "19:00"
+    },
+    {
+     "id": "MLB22149112",
+     "canal": "grupo_whatsapp",
+     "hora": "19:00"
+    },
+    {
+     "id": "MLB61980728",
+     "canal": "grupo_whatsapp",
+     "hora": "19:00"
+    },
+    {
+     "id": "MLB47374183",
+     "canal": "telegram",
+     "hora": "19:25"
+    },
+    {
+     "id": "MLB56232246",
+     "canal": "telegram",
+     "hora": "19:25"
+    },
+    {
+     "id": "MLB60328223",
+     "canal": "telegram",
+     "hora": "19:25"
+    },
+    {
+     "id": "MLB58978915",
+     "canal": "telegram",
+     "hora": "19:25"
+    },
+    {
+     "id": "MLB52876876",
+     "canal": "canal_whatsapp",
+     "hora": "19:35"
+    },
+    {
+     "id": "MLB67267597",
+     "canal": "canal_whatsapp",
+     "hora": "19:35"
+    },
+    {
+     "id": "MLB61980728",
+     "canal": "grupo_whatsapp",
+     "hora": "20:00"
+    },
+    {
+     "id": "MLB45784266",
+     "canal": "grupo_whatsapp",
+     "hora": "20:00"
+    },
+    {
+     "id": "MLB26644053",
+     "canal": "grupo_whatsapp",
+     "hora": "20:00"
+    },
+    {
+     "id": "MLB66107803",
+     "canal": "grupo_whatsapp",
+     "hora": "20:00"
+    },
+    {
+     "id": "MLB77180596",
+     "canal": "telegram",
+     "hora": "20:25"
+    },
+    {
+     "id": "MLB54165758",
+     "canal": "telegram",
+     "hora": "20:25"
+    },
+    {
+     "id": "MLB62323770",
+     "canal": "telegram",
+     "hora": "20:25"
+    },
+    {
+     "id": "MLB41234257",
+     "canal": "telegram",
+     "hora": "20:25"
+    },
+    {
+     "id": "MLB66107803",
+     "canal": "canal_whatsapp",
+     "hora": "20:35"
+    },
+    {
+     "id": "MLB47847972",
+     "canal": "canal_whatsapp",
+     "hora": "20:35"
+    },
+    {
+     "id": "MLB61779090",
+     "canal": "grupo_whatsapp",
+     "hora": "21:00"
+    },
+    {
+     "id": "MLB73442518",
+     "canal": "grupo_whatsapp",
+     "hora": "21:00"
+    },
+    {
+     "id": "MLB81088146",
+     "canal": "grupo_whatsapp",
+     "hora": "21:00"
+    },
+    {
+     "id": "MLB47847972",
+     "canal": "grupo_whatsapp",
+     "hora": "21:00"
+    },
+    {
+     "id": "MLB65537359",
+     "canal": "telegram",
+     "hora": "21:25"
+    },
+    {
+     "id": "MLB73442518",
+     "canal": "telegram",
+     "hora": "21:25"
+    },
+    {
+     "id": "MLB69228926",
+     "canal": "telegram",
+     "hora": "21:25"
+    },
+    {
+     "id": "MLB79649313",
+     "canal": "telegram",
+     "hora": "21:25"
+    },
+    {
+     "id": "MLB76059382",
+     "canal": "canal_whatsapp",
+     "hora": "21:35"
+    },
+    {
+     "id": "MLB80515278",
+     "canal": "canal_whatsapp",
+     "hora": "21:35"
     }
    ]
   },
@@ -671,5 +951,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-20T15:55"
+ "gerado": "2026-11-20T22:05"
 }
