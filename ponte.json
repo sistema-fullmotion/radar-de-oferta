@@ -34,6 +34,11 @@
  "novidades": [
   {
    "data": "2026-11-22",
+   "titulo": "Perfume com o texto de vocês (pedido 20, parte 1)",
+   "detalhe": "Posts de perfume nos grupos, no canal e no Telegram saem com o texto_whats do canais.json desde 22/11 ~15h50."
+  },
+  {
+   "data": "2026-11-22",
    "titulo": "Ritmo novo no Achados: mais posts e mais Mercado Livre",
    "detalhe": "Decisão do Fabrício em 22/11. O Radar | Achados passa a postar de hora em hora das 8h às 21h (antes 8h às 13h e 18h às 21h), com teto de 100 posts por dia (antes 66). As quedas do Mercado Livre no Achados sobem de 12 para até 50 por dia, 4 por postagem, sempre pelo link_whats de vocês. Os 4 grupos de seção seguem com 6 por dia, agora às 8h, 10h, 12h, 18h, 19h e 20h. Com isso o teto somado do número passa de cerca de 90 para cerca de 125 mensagens por dia. Regras iguais: queda de 10% a 60%, 24 h de histórico, 7 dias sem repetir e nunca a mesma queda em dois grupos na mesma postagem. Se faltar queda nova no canais.json, o Achados simplesmente posta menos."
   },
@@ -153,7 +158,7 @@
   {
    "data": "2026-11-22",
    "ao_pedido": "20. Posts de perfume (texto_whats) e imagem deitada (foto_post)",
-   "texto": "Lido e conferido no canais.json gerado em 2026-11-22T18:20Z. Ainda NÃO aplicado: esperando o ok do Fabrício. O que vimos: (1) foto_post ainda não aparece em nenhuma das 160 quedas, então a imagem deitada só dá para ligar quando o campo vier; mandem um exemplo para avaliarmos como fica no grupo. (2) texto_whats vem nas 160, mas o formato novo de perfume (inspirado em, notas, fixação, projeção) aparece em 3 dos 41 perfumes; nos outros o texto é o geral. (3) O texto arredonda o preço (R$ 270 para um produto de R$ 269,90, de R$ 400 para 399,99): nós postamos com os centavos; pedimos manter os centavos no texto_whats. (4) O texto traz utm_source=whatsapp fixo: no canal do WhatsApp trocamos por canal_whats e, no Telegram, usamos link_telegram e prova_telegram, como vocês pediram. Proposta para o Fabrício decidir: usar o texto_whats de vocês nos posts de perfume (grupo de Perfumes e perfumes no Achados) e manter o nosso formato nos demais."
+   "texto": "PARTE 1 APLICADA em 22/11 por volta das 15h50 com o ok do Fabrício: toda queda de categoria \"perfumes\" sai com o texto_whats de vocês exatamente como vem, no grupo de Perfumes e no Achados. No canal do WhatsApp é o mesmo texto com utm_source=canal_whats; no Telegram, com link_telegram e prova_telegram no lugar e sem os sinais de negrito e riscado, que lá não são lidos. Se o texto vier sem o link_whats dentro, ou a queda vier sem link_whats, o post sai no nosso formato. As outras categorias seguem no nosso formato. Conferido a seco com o canais.json de 18:20Z: 32 perfumes com o texto pronto, um link de compra e uma origem por post. PARTE 2 (foto_post) NÃO aplicada: o campo ainda não vem em nenhuma queda; quando vier, mandem um exemplo e pedimos o ok do Fabrício para ligar. Obrigado pelos centavos no preço do formato novo."
   },
   {
    "data": "2026-11-22",
@@ -704,6 +709,16 @@
      "id": "MLB52900164",
      "canal": "telegram",
      "hora": "15:25"
+    },
+    {
+     "id": "MLB37858740",
+     "canal": "canal_whatsapp",
+     "hora": "15:35"
+    },
+    {
+     "id": "MLB53669309",
+     "canal": "canal_whatsapp",
+     "hora": "15:35"
     }
    ]
   },
@@ -2146,5 +2161,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-22T15:31"
+ "gerado": "2026-11-22T18:48"
 }
