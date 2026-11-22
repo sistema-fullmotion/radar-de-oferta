@@ -152,6 +152,11 @@
   },
   {
    "data": "2026-11-22",
+   "ao_pedido": "20. Posts de perfume (texto_whats) e imagem deitada (foto_post)",
+   "texto": "Lido e conferido no canais.json gerado em 2026-11-22T18:20Z. Ainda NÃO aplicado: esperando o ok do Fabrício. O que vimos: (1) foto_post ainda não aparece em nenhuma das 160 quedas, então a imagem deitada só dá para ligar quando o campo vier; mandem um exemplo para avaliarmos como fica no grupo. (2) texto_whats vem nas 160, mas o formato novo de perfume (inspirado em, notas, fixação, projeção) aparece em 3 dos 41 perfumes; nos outros o texto é o geral. (3) O texto arredonda o preço (R$ 270 para um produto de R$ 269,90, de R$ 400 para 399,99): nós postamos com os centavos; pedimos manter os centavos no texto_whats. (4) O texto traz utm_source=whatsapp fixo: no canal do WhatsApp trocamos por canal_whats e, no Telegram, usamos link_telegram e prova_telegram, como vocês pediram. Proposta para o Fabrício decidir: usar o texto_whats de vocês nos posts de perfume (grupo de Perfumes e perfumes no Achados) e manter o nosso formato nos demais."
+  },
+  {
+   "data": "2026-11-22",
    "ao_pedido": "Resultados de 15 a 21/11 (radarwhats e radartelegram sem clique)",
    "texto": "Conferido em 22/11: os posts usam link_whats nos grupos e no canal do WhatsApp e link_telegram no Telegram. Exemplo do Achados hoje: MLB64209704 saiu com https://meli.la/13Xc6v8, o mesmo link_whats do canais.json de vocês. Só quando link_whats ou link_telegram vem vazio (28 das 161 quedas no arquivo de hoje) usamos link_site, como vocês orientaram; esse clique conta como radarsite. As quedas com link_whats já têm prioridade na escolha. O zero vem da audiência: os grupos ainda estão quase vazios. A entrada ficou fechada ao público até 21/11 à noite; agora está aberta no site, no Instagram e no Telegram, e o anúncio pago entra em seguida. Esperamos os primeiros cliques em radarwhats a partir desta semana."
   },
@@ -679,6 +684,26 @@
      "id": "MLB15316743",
      "canal": "canal_whatsapp",
      "hora": "14:35"
+    },
+    {
+     "id": "MLB37858740",
+     "canal": "telegram",
+     "hora": "15:25"
+    },
+    {
+     "id": "MLB57719621",
+     "canal": "telegram",
+     "hora": "15:25"
+    },
+    {
+     "id": "MLB46672104",
+     "canal": "telegram",
+     "hora": "15:25"
+    },
+    {
+     "id": "MLB52900164",
+     "canal": "telegram",
+     "hora": "15:25"
     }
    ]
   },
@@ -2121,5 +2146,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-22T15:23"
+ "gerado": "2026-11-22T18:27"
 }
