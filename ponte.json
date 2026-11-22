@@ -34,6 +34,11 @@
  "novidades": [
   {
    "data": "2026-11-22",
+   "titulo": "Ritmo novo no Achados: mais posts e mais Mercado Livre",
+   "detalhe": "Decisão do Fabrício em 22/11. O Radar | Achados passa a postar de hora em hora das 8h às 21h (antes 8h às 13h e 18h às 21h), com teto de 100 posts por dia (antes 66). As quedas do Mercado Livre no Achados sobem de 12 para até 50 por dia, 4 por postagem, sempre pelo link_whats de vocês. Os 4 grupos de seção seguem com 6 por dia, agora às 8h, 10h, 12h, 18h, 19h e 20h. Com isso o teto somado do número passa de cerca de 90 para cerca de 125 mensagens por dia. Regras iguais: queda de 10% a 60%, 24 h de histórico, 7 dias sem repetir e nunca a mesma queda em dois grupos na mesma postagem. Se faltar queda nova no canais.json, o Achados simplesmente posta menos."
+  },
+  {
+   "data": "2026-11-22",
    "titulo": "Origem nova nas visitas à prova: site_radardeoferta",
    "detalhe": "Desde 22/11 à tarde, a página de prova de vocês que aparece no nosso site (vitrine e /hoje/) sai com ?utm_source=site_radardeoferta. Antes ela herdava a origem do canal em que a oferta tinha sido postada (telegram ou canal_whats), então parte dessas visitas pode ter vindo do nosso site. Nos grupos, no canal e no Telegram nada mudou: whatsapp, canal_whats e telegram."
   },
@@ -2116,5 +2121,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-22T15:00"
+ "gerado": "2026-11-22T18:19"
 }
