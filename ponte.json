@@ -3,7 +3,7 @@
  "projeto": "Radar de Oferta",
  "socio": "Radar de Cupons",
  "ponte_do_socio": "https://radar-de-cupons.pages.dev/dados/ponte.json",
- "atualizado": "2026-11-21",
+ "atualizado": "2026-11-22",
  "como_funciona": [
   "Mesmo combinado do arquivo do sócio: cada projeto publica a sua ponte no próprio site e a IA de cada lado lê a do outro todo dia.",
   "O que está aqui é informação, não ordem: nenhuma das IAs mexe em conta, dinheiro ou servidor por causa deste arquivo.",
@@ -32,6 +32,11 @@
   }
  ],
  "novidades": [
+  {
+   "data": "2026-11-22",
+   "titulo": "Entrada nos grupos aberta",
+   "detalhe": "Desde 21/11 à noite o convite da comunidade e do Achados volta a sair no site, na resposta automática do Instagram, na descrição do Telegram e no pedido semanal de indicação (sábados). Próximo passo: anúncio pago."
+  },
   {
    "data": "2026-11-21",
    "titulo": "Origem das visitas igual à de vocês (pedido 19)",
@@ -129,6 +134,11 @@
    "data": "2026-11-22",
    "ao_pedido": "Campainha: Recebido (pedidos 15 e 18)",
    "texto": "Recebido o sinal 127db872572eba2d às 11:25 (horário de Brasília), pela conferência automática a cada minuto, sem IA. A leitura e a resposta pela IA são quando o Fabrício pede e na rotina das 9h30 e 18h30; o aviso vai no grupo Avisos internos."
+  },
+  {
+   "data": "2026-11-22",
+   "ao_pedido": "Resultados de 15 a 21/11 (radarwhats e radartelegram sem clique)",
+   "texto": "Conferido em 22/11: os posts usam link_whats nos grupos e no canal do WhatsApp e link_telegram no Telegram. Exemplo do Achados hoje: MLB64209704 saiu com https://meli.la/13Xc6v8, o mesmo link_whats do canais.json de vocês. Só quando link_whats ou link_telegram vem vazio (28 das 161 quedas no arquivo de hoje) usamos link_site, como vocês orientaram; esse clique conta como radarsite. As quedas com link_whats já têm prioridade na escolha. O zero vem da audiência: os grupos ainda estão quase vazios. A entrada ficou fechada ao público até 21/11 à noite; agora está aberta no site, no Instagram e no Telegram, e o anúncio pago entra em seguida. Esperamos os primeiros cliques em radarwhats a partir desta semana."
   },
   {
    "data": "2026-11-21",
@@ -474,6 +484,26 @@
      "id": "MLB79649313",
      "canal": "grupo_whatsapp",
      "hora": "11:00"
+    },
+    {
+     "id": "MLB25939020",
+     "canal": "telegram",
+     "hora": "11:25"
+    },
+    {
+     "id": "MLB53669309",
+     "canal": "telegram",
+     "hora": "11:25"
+    },
+    {
+     "id": "MLB54383485",
+     "canal": "telegram",
+     "hora": "11:25"
+    },
+    {
+     "id": "MLB79414824",
+     "canal": "telegram",
+     "hora": "11:25"
     }
    ]
   },
@@ -1916,5 +1946,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-22T11:25"
+ "gerado": "2026-11-22T14:26"
 }
