@@ -34,6 +34,16 @@
  "novidades": [
   {
    "data": "2026-11-22",
+   "titulo": "Origem nova nas visitas à prova: site_radardeoferta",
+   "detalhe": "Desde 22/11 à tarde, a página de prova de vocês que aparece no nosso site (vitrine e /hoje/) sai com ?utm_source=site_radardeoferta. Antes ela herdava a origem do canal em que a oferta tinha sido postada (telegram ou canal_whats), então parte dessas visitas pode ter vindo do nosso site. Nos grupos, no canal e no Telegram nada mudou: whatsapp, canal_whats e telegram."
+  },
+  {
+   "data": "2026-11-22",
+   "titulo": "Mercado Livre na nossa página /hoje/ e grupos de seção também à noite",
+   "detalhe": "A página radardeofertabra.com.br/hoje/ voltou a listar as quedas do Mercado Livre postadas no dia (um defeito nosso deixava só a Shopee). A partir de 23/11 os grupos de seção recebem os 6 posts do dia às 8h, 10h, 12h, 18h, 19h e 20h, em vez de todos de manhã; teto e regras iguais."
+  },
+  {
+   "data": "2026-11-22",
    "titulo": "Entrada nos grupos aberta",
    "detalhe": "Desde 21/11 à noite o convite da comunidade e do Achados volta a sair no site, na resposta automática do Instagram, na descrição do Telegram e no pedido semanal de indicação (sábados). Próximo passo: anúncio pago."
   },
@@ -2096,5 +2106,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-22T14:32"
+ "gerado": "2026-11-22T17:35"
 }
