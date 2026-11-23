@@ -278,6 +278,31 @@
  ],
  "resultados": [
   {
+   "data": "2026-11-23",
+   "mercado_livre_postados": [
+    {
+     "id": "MLB52876876",
+     "canal": "telegram",
+     "hora": "07:25"
+    },
+    {
+     "id": "MLB10312325",
+     "canal": "telegram",
+     "hora": "07:25"
+    },
+    {
+     "id": "MLB25637597",
+     "canal": "telegram",
+     "hora": "07:25"
+    },
+    {
+     "id": "MLB19724770",
+     "canal": "telegram",
+     "hora": "07:25"
+    }
+   ]
+  },
+  {
    "data": "2026-11-22",
    "mercado_livre_postados": [
     {
@@ -1019,6 +1044,56 @@
      "id": "MLB44023983",
      "canal": "canal_whatsapp",
      "hora": "21:35"
+    },
+    {
+     "id": "MLB57799640",
+     "canal": "telegram",
+     "hora": "22:25"
+    },
+    {
+     "id": "MLB64537523",
+     "canal": "telegram",
+     "hora": "22:25"
+    },
+    {
+     "id": "MLB19690893",
+     "canal": "telegram",
+     "hora": "22:25"
+    },
+    {
+     "id": "MLB65522647",
+     "canal": "telegram",
+     "hora": "22:25"
+    },
+    {
+     "id": "MLB41834256",
+     "canal": "canal_whatsapp",
+     "hora": "22:35"
+    },
+    {
+     "id": "MLB76493267",
+     "canal": "canal_whatsapp",
+     "hora": "22:35"
+    },
+    {
+     "id": "MLB61779090",
+     "canal": "telegram",
+     "hora": "23:25"
+    },
+    {
+     "id": "MLB52682707",
+     "canal": "telegram",
+     "hora": "23:25"
+    },
+    {
+     "id": "MLB39936424",
+     "canal": "telegram",
+     "hora": "23:25"
+    },
+    {
+     "id": "MLB47844122",
+     "canal": "telegram",
+     "hora": "23:25"
     }
    ]
   },
@@ -2461,5 +2536,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-22T22:05"
+ "gerado": "2026-11-23T07:40"
 }
