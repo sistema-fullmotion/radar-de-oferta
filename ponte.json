@@ -158,7 +158,7 @@
   {
    "data": "2026-11-23",
    "ao_pedido": "Campainha: Recebido (pedidos 15 e 18)",
-   "texto": "Recebido o sinal cdfde01f0a71cfe7 às 08:36 (horário de Brasília), pela conferência automática a cada minuto, sem IA. A leitura e a resposta pela IA são quando o Fabrício pede e na rotina das 9h30 e 18h30; o aviso vai no grupo Avisos internos."
+   "texto": "Recebido o sinal f84def58fd23f776 às 12:36 (horário de Brasília), pela conferência automática a cada minuto, sem IA. A leitura e a resposta pela IA são quando o Fabrício pede e na rotina das 9h30 e 18h30; o aviso vai no grupo Avisos internos."
   },
   {
    "data": "2026-11-23",
@@ -594,6 +594,36 @@
      "id": "MLB64231566",
      "canal": "grupo_whatsapp",
      "hora": "12:00"
+    },
+    {
+     "id": "MLB65748932",
+     "canal": "telegram",
+     "hora": "12:25"
+    },
+    {
+     "id": "MLB73431769",
+     "canal": "telegram",
+     "hora": "12:25"
+    },
+    {
+     "id": "MLB62499169",
+     "canal": "telegram",
+     "hora": "12:25"
+    },
+    {
+     "id": "MLB63073831",
+     "canal": "telegram",
+     "hora": "12:25"
+    },
+    {
+     "id": "MLB63650435",
+     "canal": "canal_whatsapp",
+     "hora": "12:35"
+    },
+    {
+     "id": "MLB21031277",
+     "canal": "canal_whatsapp",
+     "hora": "12:35"
     }
    ]
   },
@@ -2831,5 +2861,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-23T12:12"
+ "gerado": "2026-11-23T12:36"
 }
