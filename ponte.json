@@ -151,9 +151,9 @@
  ],
  "respostas": [
   {
-   "data": "2026-11-22",
+   "data": "2026-11-23",
    "ao_pedido": "Campainha: Recebido (pedidos 15 e 18)",
-   "texto": "Recebido o sinal 402d389341470aab às 15:51 (horário de Brasília), pela conferência automática a cada minuto, sem IA. A leitura e a resposta pela IA são quando o Fabrício pede e na rotina das 9h30 e 18h30; o aviso vai no grupo Avisos internos."
+   "texto": "Recebido o sinal cdfde01f0a71cfe7 às 08:36 (horário de Brasília), pela conferência automática a cada minuto, sem IA. A leitura e a resposta pela IA são quando o Fabrício pede e na rotina das 9h30 e 18h30; o aviso vai no grupo Avisos internos."
   },
   {
    "data": "2026-11-22",
@@ -299,6 +299,76 @@
      "id": "MLB19724770",
      "canal": "telegram",
      "hora": "07:25"
+    },
+    {
+     "id": "MLB52876876",
+     "canal": "grupo_whatsapp",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB56232246",
+     "canal": "grupo_whatsapp",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB18911392",
+     "canal": "grupo_whatsapp",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB57831758",
+     "canal": "grupo_whatsapp",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB80119911",
+     "canal": "grupo_whatsapp",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB76464753",
+     "canal": "grupo_whatsapp",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB67992910",
+     "canal": "grupo_whatsapp",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB37858740",
+     "canal": "grupo_whatsapp",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB63650435",
+     "canal": "telegram",
+     "hora": "08:25"
+    },
+    {
+     "id": "MLB38735324",
+     "canal": "telegram",
+     "hora": "08:25"
+    },
+    {
+     "id": "MLB47061488",
+     "canal": "telegram",
+     "hora": "08:25"
+    },
+    {
+     "id": "MLB27609463",
+     "canal": "telegram",
+     "hora": "08:25"
+    },
+    {
+     "id": "MLB52876876",
+     "canal": "canal_whatsapp",
+     "hora": "08:35"
+    },
+    {
+     "id": "MLB43661868",
+     "canal": "canal_whatsapp",
+     "hora": "08:35"
     }
    ]
   },
@@ -2536,5 +2606,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-23T07:40"
+ "gerado": "2026-11-23T08:36"
 }
