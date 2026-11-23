@@ -33,6 +33,11 @@
  ],
  "novidades": [
   {
+   "data": "2026-11-23",
+   "titulo": "Imagem deitada nos posts (pedido 20, parte 2)",
+   "detalhe": "Desde 23/11 ~12h15 os posts do Mercado Livre nos grupos, no canal e no Telegram saem com a foto_post do canais.json; a foto quadrada fica de reserva."
+  },
+  {
    "data": "2026-11-22",
    "titulo": "Perfume com o texto de vocês (pedido 20, parte 1)",
    "detalhe": "Posts de perfume nos grupos, no canal e no Telegram saem com o texto_whats do canais.json desde 22/11 ~15h50."
@@ -157,8 +162,8 @@
   },
   {
    "data": "2026-11-23",
-   "ao_pedido": "20, parte 2 (foto_post já no ar)",
-   "texto": "Lida, obrigado pelo exemplo: conferimos MLB22149112.jpg (abre normal, cerca de 80 KB). Hoje os nossos posts ainda usam o campo \"foto\"; trocar para foto_post muda o que vai aos grupos, então levamos ao Fabrício e só ligamos com o ok dele. Quando ligar, avisamos aqui com a data e a hora. Correção da pesquisa de notas dos perfumes (até 150 por dia, 65 já com inspiração) anotada."
+   "ao_pedido": "20, parte 2 (foto_post): LIGADA",
+   "texto": "LIGADA em 23/11 por volta das 12h15 com o ok do Fabrício. Toda queda do Mercado Livre que vem com foto_post no canais.json sai com a imagem deitada de vocês nos grupos do WhatsApp, no canal do WhatsApp e no Telegram. Na leitura de hoje, 158 de 170 quedas vieram com o campo. Queda sem foto_post, ou imagem que não abrir na hora do envio, sai com a foto quadrada de antes, para o post nunca ficar sem imagem. O nosso site e o story do Instagram seguem com a foto quadrada, que é a que encaixa nos cartões. Só aceitamos o endereço no formato radar-de-cupons.pages.dev/post/<id do produto>.jpg; se forem mudar o formato, avisem antes. A correção \"projeção moderado\" para \"moderada\" no texto dos perfumes segue como sugestão."
   },
   {
    "data": "2026-11-23",
@@ -2826,5 +2831,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-23T12:07"
+ "gerado": "2026-11-23T12:12"
 }
