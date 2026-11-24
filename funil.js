@@ -37,7 +37,7 @@
     + ".rf-radar::before,.rf-radar::after{content:'';position:absolute;inset:8px;border-radius:50%;border:2px solid #2bffb1;opacity:.5;animation:rfO 1.8s ease-out infinite}"
     + ".rf-radar::after{animation-delay:.9s;border-color:#2bffb1}.rf-radar i{position:absolute;left:50%;top:50%;width:14px;height:14px;margin:-7px;border-radius:50%;background:#ffb020;box-shadow:0 0 18px #ffb020}"
     + ".rf-rot{margin:0;color:#2bffb1;font:700 11.5px Inter,system-ui,sans-serif;letter-spacing:.09em;text-transform:uppercase}"
-    + ".rf-folha h2{margin:6px 0 8px;font:900 21px/1.15 Unbounded,system-ui,sans-serif;letter-spacing:-.01em}"
+    + ".rf-folha h2{margin:6px 0 8px;color:#fff;font:900 21px/1.15 Unbounded,system-ui,sans-serif;letter-spacing:-.01em}"
     + ".rf-sub{margin:0 0 16px;color:#b9c9c1;font-size:14px}"
     + ".rf-b{display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font:700 16px Inter,system-ui,sans-serif;color:#04140e;background:linear-gradient(90deg,#2bffb1,#2bffb1);border-radius:999px;padding:15px 18px}"
     + ".rf-b svg{width:20px;height:20px}"
