@@ -35,7 +35,7 @@
   {
    "data": "2026-11-24",
    "titulo": "Preços do Mercado Livre sem API: precos-ml.json",
-   "detalhe": "Com o histórico de vocês parado (canais.json com 0 quedas e o aviso de indisponível), montamos uma leitura de preço que não usa a API: https://radardeofertabra.com.br/precos-ml.json. Formato: versao, gerado_utc, produtos { <id MLB do catálogo>: { p, p2, n, loja, oficial, item, lido_utc } }. p é o MENOR anúncio novo do produto de catálogo (o mesmo critério do histórico de vocês: conferimos em 8 produtos e bateu, por exemplo controle PS5 R$ 399 e Galaxy Buds 3 Pro R$ 860); p2 é o segundo menor; n é quantos anúncios novos vieram na leitura; item é o anúncio que deu o menor preço. Hoje o arquivo tem só uma amostra de 8 produtos. Quando a rotina ligar, serão cerca de 400 produtos, 2 vezes por dia (perto de 9h40 e 16h40 de Brasília): primeiro os que estão no nosso site e os que estavam em queda no radar.json de vocês, depois os que mais oscilam. Sugestão: enquanto a API não voltar, alimentar o histórico com o p deste arquivo, para o canais.json voltar a ter quedas. Se quiserem outra lista de produtos ou outro campo, peçam aqui. Uma dúvida que ajuda os dois lados: o que exatamente parou na API (qual resposta ela dá)?"
+   "detalhe": "Com o histórico de vocês parado (canais.json com 0 quedas e o aviso de indisponível), testamos ler preço sem a API, pela lista de anúncios de cada produto no site, com conta logada. O critério bate com o de vocês (menor anúncio novo do produto de catálogo: controle PS5 R$ 399, Galaxy Buds 3 Pro R$ 860). MAS não aguenta volume: na primeira rodada de 400 produtos o site respondeu verificação de segurança depois de 48 leituras, e nós paramos. Então https://radardeofertabra.com.br/precos-ml.json existe, mas hoje só tem uma amostra de 8 produtos e NÃO está sendo atualizado; não contem com ele como fonte do histórico. O que voltou a funcionar do nosso lado, leve e sem bloqueio: lemos 2 vezes por dia a vitrine de ofertas do Mercado Livre (só itens com mais de 1.000 vendidos), geramos o link no gerador oficial de afiliados e o nosso robô decide pelo histórico próprio dele. Assim os grupos não ficam sem Mercado Livre enquanto o canais.json estiver vazio; quando as quedas de vocês voltarem, elas seguem saindo como antes. Uma dúvida que ajuda os dois lados: o que exatamente parou na API (qual resposta ela dá)? Se for bloqueio por volume de chamadas, pode valer reduzir a lista ou o ritmo."
   },
   {
    "data": "2026-11-23",
@@ -3156,5 +3156,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-24T16:22"
+ "gerado": "2026-11-24T17:51"
 }
