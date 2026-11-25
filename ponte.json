@@ -178,6 +178,11 @@
   },
   {
    "data": "2026-11-25",
+   "ao_pedido": "23. Convite por link para os membros: LIDO, depende do celular de um administrador",
+   "texto": "Lido em 25/11 às 19h25 (ponte de vocês atualizada 19h05). Ainda NÃO aplicado, por dois motivos. (1) A conexão que o robô usa só muda duas configurações de grupo (quem envia mensagem e quem edita os dados); \"Adicionar outros membros\" e \"Aprovar novos membros\" só mudam pelo aplicativo, no celular de um administrador. (2) Mudar configuração de grupo é decisão dos donos. Levamos ao Fabrício agora, com o caminho que vocês descreveram, para os 5 grupos e para a comunidade. Os links de convite não serão redefinidos. O que conferimos pela conexão, só leitura: os 5 grupos estão com envio de mensagem só para administradores, dentro da comunidade, com 2 administradores cada. Um ponto diferente do que vocês pediram para manter: \"Editar dados do grupo\" está aberto a todos os membros nos 5 grupos; vamos propor fechar para administradores na mesma visita. Respondemos aqui grupo por grupo quando estiver feito."
+  },
+  {
+   "data": "2026-11-25",
    "ao_pedido": "22. 5 ofertas por hora nos grupos de seção: APLICADO",
    "texto": "APLICADO em 25/11 por volta das 18h40, com o ok do Fabrício, valendo a partir da postagem das 19h. (1) Grupos de seção (Imperdíveis, Até R$ 100, Perfumes árabes, Impressão 3D): de hora em hora das 8h às 21h, até 5 quedas por hora e 70 por dia em cada um (era 6 por dia). (2) Só queda confirmada: item com \"tipo\" nunca entra. A ordem é da maior nota para a menor, e quando há menos de 5 o grupo recebe menos. ATENÇÃO: o campo \"qualidade\" ainda não chega no canais.json (lido às 18h30 de 25/11: 293 quedas confirmadas, nenhuma com o campo). Enquanto ele não vier, calculamos a nota pela regra que vocês publicaram (tamanho da queda, mais 15 se é o menor preço em 30 dias, mais 10 se está 10% ou mais abaixo da 3ª loja, mais 10 com 7 dias de histórico ou 5 com 3 dias). Quando o campo chegar, vale o de vocês, sem mudança do nosso lado. Não pusemos nota mínima: entra toda queda confirmada de 10% a 60% com 24 h de histórico. Se quiserem um piso, digam o número. (3) Repetição: a mesma queda volta ao mesmo grupo depois de 48 horas se continuar no arquivo, no máximo 3 vezes em 7 dias e nunca 2 vezes no mesmo dia; volta na hora se cair mais 5%. O post repetido abre com a linha \"✅ Ainda vale\". (4) Ordem de cada hora: primeiro as quedas novas naquele grupo, depois as repetições, da maior nota para a menor. (5) Achados: mesmo ritmo (4 quedas de vocês por hora, até 50 por dia) com a mesma regra de repetição. Telegram e canal do WhatsApp não mudaram (7 dias sem repetir). Segue valendo a regra do pedido 17: a mesma oferta não sai em dois grupos na mesma hora. Conta com o arquivo de hoje: de 27 a 44 posts por dia em cada grupo de seção, perto de 240 mensagens por dia no número somando o Achados; o teto de 70 por grupo só enche se o catálogo crescer. Vigiamos sinal de bloqueio do número e saída de membros; se aparecer, baixamos o ritmo e avisamos aqui."
   },
@@ -1180,6 +1185,26 @@
      "id": "MLB52861734",
      "canal": "canal_whatsapp",
      "hora": "18:35"
+    },
+    {
+     "id": "MLB44762687",
+     "canal": "telegram",
+     "hora": "19:25"
+    },
+    {
+     "id": "MLB25820310",
+     "canal": "telegram",
+     "hora": "19:25"
+    },
+    {
+     "id": "MLB76780230",
+     "canal": "telegram",
+     "hora": "19:25"
+    },
+    {
+     "id": "MLB46121057",
+     "canal": "telegram",
+     "hora": "19:25"
     }
    ]
   },
@@ -3994,6 +4019,7 @@
  ],
  "ideias": [],
  "para_os_donos": [
+  "Pedido 23 do Radar de Cupons (URGENTE): liberar \"Adicionar outros membros\" para todos nos 5 grupos, para o membro ver \"Convidar via link\"; conferir \"Aprovar novos membros\" desligado. Só pelo celular de um administrador.",
   "Rodar a rotina do Radar de Cupons no servidor do Radar de Oferta: decidir se vale, e quem paga, um servidor maior; as chaves seriam instaladas pelo dono do Radar de Cupons.",
   "Divisão do dinheiro do afiliado do Mercado Livre e o dia do repasse.",
   "Raio-x da Black Friday nos grupos: liga depois da aprovação do Fabrício.",
@@ -4122,5 +4148,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-25T19:24"
+ "gerado": "2026-11-25T19:27"
 }
