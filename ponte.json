@@ -172,6 +172,11 @@
    "texto": "Recebido o sinal 522636a241e2f571 às 10:11 (horário de Brasília), pela conferência automática a cada minuto, sem IA. A leitura e a resposta pela IA são quando o Fabrício pede e na rotina das 9h30 e 18h30; o aviso vai no grupo Avisos internos."
   },
   {
+   "data": "2026-11-25",
+   "ao_pedido": "21. Menos avisos de erro da Shopee no grupo de avisos: APLICADO",
+   "texto": "APLICADO em 25/11 por volta das 14h30, com o ok do Fabrício. (1) Busca por palavra: continua tentando 5 vezes na hora. Se desistir, a busca é adiada e tentada mais uma vez no fim da rodada, depois de 1 minuto. Não adotamos as esperas de 5 e 15 minutos porque a coleta roda de hora em hora e não pode ficar presa; a rodada seguinte faz esse papel. Falha de busca não gera mais aviso. Só avisa quando a mesma busca falha em 3 rodadas seguidas, ou quando mais da metade das buscas da rodada falha. (2) Erro 11001: achamos a causa e era nossa. Até 22/11 a página do nosso site mandava endereços do Mercado Livre para o gerador de link da Shopee, que recusava. Corrigido em 22/11 e, desde então, o registro não tem nenhum 11001. Por isso não criamos a limpeza do endereço nem a marca de 7 dias. Se o erro aparecer em produto da Shopee, o produto fica sem link, sem post e sem aviso, e entra na contagem do resumo. (3) Resumo: um por dia, na primeira conferência depois das 20h, só quando houve falha: \"Shopee hoje: N buscas falharam e foram puladas, M produtos ficaram sem link\". Dia sem falha não manda nada. (4) Continua avisando na hora o que precisa de gente: WhatsApp desconectado, Shopee recusando a chave ou fora do ar, coleta parada, lista não aprovada, postagem parada e qualquer erro que não seja desses dois tipos. Os posts não mudaram."
+  },
+  {
    "data": "2026-11-23",
    "ao_pedido": "20, parte 2 (foto_post): LIGADA",
    "texto": "LIGADA em 23/11 por volta das 12h15 com o ok do Fabrício. Toda queda do Mercado Livre que vem com foto_post no canais.json sai com a imagem deitada de vocês nos grupos do WhatsApp, no canal do WhatsApp e no Telegram. Na leitura de hoje, 158 de 170 quedas vieram com o campo. Queda sem foto_post, ou imagem que não abrir na hora do envio, sai com a foto quadrada de antes, para o post nunca ficar sem imagem. O nosso site e o story do Instagram seguem com a foto quadrada, que é a que encaixa nos cartões. Só aceitamos o endereço no formato radar-de-cupons.pages.dev/post/<id do produto>.jpg; se forem mudar o formato, avisem antes. A correção \"projeção moderado\" para \"moderada\" no texto dos perfumes segue como sugestão."
@@ -705,6 +710,26 @@
      "id": "MLB6099972",
      "canal": "grupo_whatsapp",
      "hora": "14:00"
+    },
+    {
+     "id": "MLB6099972",
+     "canal": "telegram",
+     "hora": "14:25"
+    },
+    {
+     "id": "MLB52861734",
+     "canal": "telegram",
+     "hora": "14:25"
+    },
+    {
+     "id": "MLB62003274",
+     "canal": "telegram",
+     "hora": "14:25"
+    },
+    {
+     "id": "MLB54150780",
+     "canal": "telegram",
+     "hora": "14:25"
     }
    ]
   },
@@ -3647,5 +3672,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-25T14:19"
+ "gerado": "2026-11-25T14:27"
 }
