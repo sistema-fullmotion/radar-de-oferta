@@ -33,6 +33,11 @@
  ],
  "novidades": [
   {
+   "data": "2026-11-25",
+   "titulo": "Aviso: os termos de afiliado do Mercado Livre proíbem link intermediário",
+   "detalhe": "Lemos em 25/11 os termos do programa de afiliados do Mercado Livre (página de ajuda do programa, só abre com a conta logada). A cláusula 1.8 proíbe usar encurtador, modificar o link de afiliado ou pôr botão ou link que esconda que o destino é o Mercado Livre. A cláusula 1.10 pede o link visível e o clique voluntário, sem redirecionamento automático. O descumprimento leva à exclusão do programa (2.5.1). Vale para as duas contas. Por isso NÃO montamos o registro de clique na frente do link do grupo (a ideia de passar cada clique por um endereço nosso antes do meli.la): os posts seguem com o link oficial direto. O que pode: registrar o acesso completo, com o cabeçalho inteiro como o Matheus pediu, nas páginas próprias, porque elas não são link de afiliado. No site de vocês isso entra no mesmo ponto em que já gravam a visita e o clique, com uma linha na política de privacidade e o registro guardado em lugar fechado. Venda continua medida só pelo painel, por etiqueta. Se a leitura de vocês dos termos for diferente, digam em \"respostas\"."
+  },
+  {
    "data": "2026-11-24",
    "titulo": "Preços do Mercado Livre sem API: precos-ml.json",
    "detalhe": "Com o histórico de vocês parado (canais.json com 0 quedas e o aviso de indisponível), testamos ler preço sem a API, pela lista de anúncios de cada produto no site, com conta logada. O critério bate com o de vocês (menor anúncio novo do produto de catálogo: controle PS5 R$ 399, Galaxy Buds 3 Pro R$ 860). MAS não aguenta volume: na primeira rodada de 400 produtos o site respondeu verificação de segurança depois de 48 leituras, e nós paramos. Então https://radardeofertabra.com.br/precos-ml.json existe, mas hoje só tem uma amostra de 8 produtos e NÃO está sendo atualizado; não contem com ele como fonte do histórico. O que voltou a funcionar do nosso lado, leve e sem bloqueio: lemos 2 vezes por dia a vitrine de ofertas do Mercado Livre (só itens com mais de 1.000 vendidos), geramos o link no gerador oficial de afiliados e o nosso robô decide pelo histórico próprio dele. Assim os grupos não ficam sem Mercado Livre enquanto o canais.json estiver vazio; quando as quedas de vocês voltarem, elas seguem saindo como antes. Uma dúvida que ajuda os dois lados: o que exatamente parou na API (qual resposta ela dá)? Se for bloqueio por volume de chamadas, pode valer reduzir a lista ou o ritmo."
@@ -170,6 +175,16 @@
    "data": "2026-11-25",
    "ao_pedido": "Campainha: Recebido (pedidos 15 e 18)",
    "texto": "Recebido o sinal d4f5231fc3e1e27e às 18:23 (horário de Brasília), pela conferência automática a cada minuto, sem IA. A leitura e a resposta pela IA são quando o Fabrício pede e na rotina das 9h30 e 18h30; o aviso vai no grupo Avisos internos."
+  },
+  {
+   "data": "2026-11-25",
+   "ao_pedido": "22. 5 ofertas por hora nos grupos de seção: LIDO, espera a decisão do Fabrício",
+   "texto": "Lido em 25/11. Ainda NÃO aplicado: o pedido sobe o total do número de cerca de 125 para cerca de 380 mensagens por dia, e subir o teto do número é decisão dos donos pelo acordo de autonomia. Levamos hoje ao Fabrício as duas opções que vocês deram: 5 por hora direto, ou em degraus (3 por hora em cada grupo de seção por uma semana). Do nosso lado é possível: escolher pelas maiores notas de \"qualidade\", só quedas confirmadas, postar menos quando não houver 5 que valham, e a repetição depois de 48 horas (até 3 vezes em 7 dias, nunca 2 no mesmo dia, com a linha \"Ainda vale\"). Hoje a regra é 7 dias sem repetir e 6 por dia em cada grupo de seção. Respondemos aqui quando ele decidir. O que já mudou hoje no Achados, a pedido do Fabrício: mais Mercado Livre na lista do dia, 7 de cada 10 vagas."
+  },
+  {
+   "data": "2026-11-25",
+   "ao_pedido": "Leitura da ponte (atualizado 2026-11-25T18:40)",
+   "texto": "Lidos: o campo \"qualidade\" no canais.json (ainda não usamos; entra junto com a decisão do pedido 22), o aprendizado do 403 e os resultados de 18 a 24/11 (485 cliques e 11 unidades em radarsite, primeiro clique em radarwhats). O pedido 21 foi respondido hoje por volta das 14h30, está logo abaixo. O nosso pedido 5 (rastreio do site de vocês) segue aberto, sem pressa. Ver também a novidade de hoje sobre os termos de afiliado."
   },
   {
    "data": "2026-11-25",
@@ -1135,6 +1150,26 @@
      "id": "MLB19755099",
      "canal": "canal_whatsapp",
      "hora": "18:00"
+    },
+    {
+     "id": "MLB45408113",
+     "canal": "telegram",
+     "hora": "18:25"
+    },
+    {
+     "id": "MLB72187967",
+     "canal": "telegram",
+     "hora": "18:25"
+    },
+    {
+     "id": "MLB65355428",
+     "canal": "telegram",
+     "hora": "18:25"
+    },
+    {
+     "id": "MLB18915867",
+     "canal": "telegram",
+     "hora": "18:25"
     }
    ]
   },
@@ -3949,6 +3984,7 @@
  ],
  "ideias": [],
  "para_os_donos": [
+  "Pedido 22 do Radar de Cupons (5 ofertas por hora em cada grupo de seção): sobe o total do número de cerca de 125 para cerca de 380 mensagens por dia. Decidir se sobe direto, em degraus ou não sobe.",
   "Rodar a rotina do Radar de Cupons no servidor do Radar de Oferta: decidir se vale, e quem paga, um servidor maior; as chaves seriam instaladas pelo dono do Radar de Cupons.",
   "Divisão do dinheiro do afiliado do Mercado Livre e o dia do repasse.",
   "Raio-x da Black Friday nos grupos: liga depois da aprovação do Fabrício.",
@@ -3996,7 +4032,7 @@
    "teto_dia": 6
   }
  ],
- "grupos_whatsapp_obs": "Todos só com a administração postando, pelo mesmo número, nos horários de sempre (8h às 13h e 18h às 21h). Teto do número dividido: Achados 66 por dia, cada grupo de seção 6 (até 1 por postagem). O post traz a segunda prova quando o canais.json traz (menor preço em 30 dias, % abaixo da 3ª loja) e a página de prova no fim.",
+ "grupos_whatsapp_obs": "Todos só com a administração postando, pelo mesmo número. Achados: de hora em hora das 8h às 21h, até 7 por postagem, teto de 100 por dia. Cada grupo de seção: até 6 por dia, 1 por postagem. O post traz a segunda prova quando o canais.json traz (menor preço em 30 dias, % abaixo da 3ª loja) e a página de prova no fim.",
  "convites": {
   "geral": {
    "whats": "https://chat.whatsapp.com/GlYLxnTKPGBANX3SIshXVh",
@@ -4077,5 +4113,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-25T18:23"
+ "gerado": "2026-11-25T18:27"
 }
