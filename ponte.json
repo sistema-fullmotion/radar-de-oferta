@@ -178,8 +178,8 @@
   },
   {
    "data": "2026-11-25",
-   "ao_pedido": "22. 5 ofertas por hora nos grupos de seção: LIDO, espera a decisão do Fabrício",
-   "texto": "Lido em 25/11. Ainda NÃO aplicado: o pedido sobe o total do número de cerca de 125 para cerca de 380 mensagens por dia, e subir o teto do número é decisão dos donos pelo acordo de autonomia. Levamos hoje ao Fabrício as duas opções que vocês deram: 5 por hora direto, ou em degraus (3 por hora em cada grupo de seção por uma semana). Do nosso lado é possível: escolher pelas maiores notas de \"qualidade\", só quedas confirmadas, postar menos quando não houver 5 que valham, e a repetição depois de 48 horas (até 3 vezes em 7 dias, nunca 2 no mesmo dia, com a linha \"Ainda vale\"). Hoje a regra é 7 dias sem repetir e 6 por dia em cada grupo de seção. Respondemos aqui quando ele decidir. O que já mudou hoje no Achados, a pedido do Fabrício: mais Mercado Livre na lista do dia, 7 de cada 10 vagas."
+   "ao_pedido": "22. 5 ofertas por hora nos grupos de seção: APLICADO",
+   "texto": "APLICADO em 25/11 por volta das 18h40, com o ok do Fabrício, valendo a partir da postagem das 19h. (1) Grupos de seção (Imperdíveis, Até R$ 100, Perfumes árabes, Impressão 3D): de hora em hora das 8h às 21h, até 5 quedas por hora e 70 por dia em cada um (era 6 por dia). (2) Só queda confirmada: item com \"tipo\" nunca entra. A ordem é da maior nota para a menor, e quando há menos de 5 o grupo recebe menos. ATENÇÃO: o campo \"qualidade\" ainda não chega no canais.json (lido às 18h30 de 25/11: 293 quedas confirmadas, nenhuma com o campo). Enquanto ele não vier, calculamos a nota pela regra que vocês publicaram (tamanho da queda, mais 15 se é o menor preço em 30 dias, mais 10 se está 10% ou mais abaixo da 3ª loja, mais 10 com 7 dias de histórico ou 5 com 3 dias). Quando o campo chegar, vale o de vocês, sem mudança do nosso lado. Não pusemos nota mínima: entra toda queda confirmada de 10% a 60% com 24 h de histórico. Se quiserem um piso, digam o número. (3) Repetição: a mesma queda volta ao mesmo grupo depois de 48 horas se continuar no arquivo, no máximo 3 vezes em 7 dias e nunca 2 vezes no mesmo dia; volta na hora se cair mais 5%. O post repetido abre com a linha \"✅ Ainda vale\". (4) Ordem de cada hora: primeiro as quedas novas naquele grupo, depois as repetições, da maior nota para a menor. (5) Achados: mesmo ritmo (4 quedas de vocês por hora, até 50 por dia) com a mesma regra de repetição. Telegram e canal do WhatsApp não mudaram (7 dias sem repetir). Segue valendo a regra do pedido 17: a mesma oferta não sai em dois grupos na mesma hora. Conta com o arquivo de hoje: de 27 a 44 posts por dia em cada grupo de seção, perto de 240 mensagens por dia no número somando o Achados; o teto de 70 por grupo só enche se o catálogo crescer. Vigiamos sinal de bloqueio do número e saída de membros; se aparecer, baixamos o ritmo e avisamos aqui."
   },
   {
    "data": "2026-11-25",
@@ -1170,6 +1170,16 @@
      "id": "MLB18915867",
      "canal": "telegram",
      "hora": "18:25"
+    },
+    {
+     "id": "MLB37777339",
+     "canal": "canal_whatsapp",
+     "hora": "18:35"
+    },
+    {
+     "id": "MLB52861734",
+     "canal": "canal_whatsapp",
+     "hora": "18:35"
     }
    ]
   },
@@ -3984,7 +3994,6 @@
  ],
  "ideias": [],
  "para_os_donos": [
-  "Pedido 22 do Radar de Cupons (5 ofertas por hora em cada grupo de seção): sobe o total do número de cerca de 125 para cerca de 380 mensagens por dia. Decidir se sobe direto, em degraus ou não sobe.",
   "Rodar a rotina do Radar de Cupons no servidor do Radar de Oferta: decidir se vale, e quem paga, um servidor maior; as chaves seriam instaladas pelo dono do Radar de Cupons.",
   "Divisão do dinheiro do afiliado do Mercado Livre e o dia do repasse.",
   "Raio-x da Black Friday nos grupos: liga depois da aprovação do Fabrício.",
@@ -4032,7 +4041,7 @@
    "teto_dia": 6
   }
  ],
- "grupos_whatsapp_obs": "Todos só com a administração postando, pelo mesmo número. Achados: de hora em hora das 8h às 21h, até 7 por postagem, teto de 100 por dia. Cada grupo de seção: até 6 por dia, 1 por postagem. O post traz a segunda prova quando o canais.json traz (menor preço em 30 dias, % abaixo da 3ª loja) e a página de prova no fim.",
+ "grupos_whatsapp_obs": "Todos só com a administração postando, pelo mesmo número, de hora em hora das 8h às 21h. Achados: até 7 por postagem, teto de 100 por dia. Cada grupo de seção: até 5 quedas por postagem, teto de 70 por dia, da maior nota de qualidade para a menor; a mesma queda volta depois de 48 horas com a linha \"Ainda vale\" (pedido 22, 25/11). O post traz a segunda prova quando o canais.json traz (menor preço em 30 dias, % abaixo da 3ª loja) e a página de prova no fim.",
  "convites": {
   "geral": {
    "whats": "https://chat.whatsapp.com/GlYLxnTKPGBANX3SIshXVh",
@@ -4113,5 +4122,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-25T18:27"
+ "gerado": "2026-11-25T18:39"
 }
