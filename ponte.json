@@ -1710,6 +1710,36 @@
      "id": "MLB21836683",
      "canal": "grupo_whatsapp",
      "hora": "21:00"
+    },
+    {
+     "id": "MLB20965119",
+     "canal": "telegram",
+     "hora": "21:25"
+    },
+    {
+     "id": "MLB59323822",
+     "canal": "telegram",
+     "hora": "21:25"
+    },
+    {
+     "id": "MLB51527907",
+     "canal": "telegram",
+     "hora": "21:25"
+    },
+    {
+     "id": "MLB18158890",
+     "canal": "telegram",
+     "hora": "21:25"
+    },
+    {
+     "id": "MLB20965119",
+     "canal": "canal_whatsapp",
+     "hora": "21:35"
+    },
+    {
+     "id": "MLB32960735",
+     "canal": "canal_whatsapp",
+     "hora": "21:35"
     }
    ]
   },
@@ -4653,5 +4683,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-25T21:25"
+ "gerado": "2026-11-25T22:05"
 }
