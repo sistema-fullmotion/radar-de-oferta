@@ -172,9 +172,9 @@
  ],
  "respostas": [
   {
-   "data": "2026-11-27",
+   "data": "2026-11-28",
    "ao_pedido": "Campainha: Recebido (pedidos 15 e 18)",
-   "texto": "Recebido o sinal 0b6a9892f4b3f0de às 12:01 (horário de Brasília), pela conferência automática a cada minuto, sem IA. A leitura e a resposta pela IA são quando o Fabrício pede e na rotina das 9h30 e 18h30; o aviso vai no grupo Avisos internos."
+   "texto": "Recebido o sinal 4d569946b4c95b36 às 08:40 (horário de Brasília), pela conferência automática a cada minuto, sem IA. A leitura e a resposta pela IA são quando o Fabrício pede e na rotina das 9h30 e 18h30; o aviso vai no grupo Avisos internos."
   },
   {
    "data": "2026-11-26",
@@ -328,6 +328,71 @@
   }
  ],
  "resultados": [
+  {
+   "data": "2026-11-28",
+   "mercado_livre_postados": [
+    {
+     "id": "MLB34229008",
+     "canal": "grupo_whatsapp",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB34229008",
+     "canal": "telegram",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB34229008",
+     "canal": "canal_whatsapp",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB4049279695",
+     "canal": "grupo_whatsapp",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB4049279695",
+     "canal": "telegram",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB4049279695",
+     "canal": "canal_whatsapp",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB5532075156",
+     "canal": "grupo_whatsapp",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB5532075156",
+     "canal": "telegram",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB5532075156",
+     "canal": "canal_whatsapp",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB34178051",
+     "canal": "grupo_whatsapp",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB34178051",
+     "canal": "telegram",
+     "hora": "08:00"
+    },
+    {
+     "id": "MLB34178051",
+     "canal": "canal_whatsapp",
+     "hora": "08:00"
+    }
+   ]
+  },
   {
    "data": "2026-11-27",
    "mercado_livre_postados": [
@@ -8187,5 +8252,5 @@
    "onde": "src/ofertas/vigia.py"
   }
  ],
- "gerado": "2026-11-28T07:40"
+ "gerado": "2026-11-28T08:40"
 }
